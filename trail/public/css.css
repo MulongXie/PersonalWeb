@@ -1,0 +1,54 @@
+* {
+			margin: 0;
+			padding: 0;
+		}
+		#map {
+			height: 500px;
+			width: 100%;
+		}
+
+#map {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.address {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.address input {
+    height: 25px;
+    border: 1px solid #d0d0d0;
+    padding: 5px;
+}
+
+.address button {
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    background-color: powderblue;
+}
+
+.address button:hover {
+    background-color: #88b6bc;
+}
+
+#myModal {
+    background-color: #c1c1c1;
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+

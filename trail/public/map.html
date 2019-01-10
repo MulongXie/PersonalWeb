@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Civilise.ai Eagle Team Website</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	
+</head>
+<body>
+    <div class="address">
+        <input type="text" name="address" value="Address...">
+        <button>Search</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="myBtn" class="btn"></div>
+    
+    <div id="myModal" class="modal" >
+        
+    </div>
+
+
+<script>
+	function initMap() {
+		var location = {lat: -25.363, lng: 131.044};
+		var map = new google.maps.Map(document.getElementById("map"),{
+			zoom: 4,
+			center: location
+		});
+		var marker = new google.maps.Marker({
+			position: location,
+			map: map
+		});
+        
+        marker.addEventListener('click', function(){
+            map.setZoom(8);
+            map.setCenter(marker.getPosition());
+                                });
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/
+js?key=AIzaSyA36Xf7IJx3sl-G5ObUlbNIS6KrGqSn78E&callback=initMap"></script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
