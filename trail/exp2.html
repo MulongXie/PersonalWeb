@@ -1,69 +1,12 @@
-<html>
+<html lang="en">
 <head>
-    <style>
-    </style>
-
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-
-
-<div id="container"  onmousemove="fetch(event)">
-    <canvas id="paint" style="border: 1px solid; width: 900px; height: 700px"></canvas>
-</div>
-
-
-<h1 id="pos"></h1>
-
-
-<script>
-
-    function getMousePos(event) {
-        var e = event || window.event;
-        var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;
-        var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
-        var x = e.pageX || e.clientX + scrollX;
-        var y = e.pageY || e.clientY + scrollY;
-        return { 'x': x, 'y': y };
-    }
-
-    function fetch(event) {
-        var pos = getMousePos(event);
-        console.log(pos);
-        document.getElementById('pos').innerText = "(" + pos.x + "," + pos.y + ")";
-        fillGrid(pos.x, pos.y);
-    }
-
-    function grid() {
-        var canvas = document.getElementById('paint');
-        var ctx = canvas.getContext('2d');
-        ctx.lineWidth = '0.1';
-
-        var wid = canvas.width, hgt = canvas.height;
-        var x = 0, y = 0;
-        var gridwid = 10, gridhgt = 10;
-
-        console.log(wid);
-        console.log(hgt);
-        while (x <= wid){
-            y = 0;
-            while (y < hgt){
-                ctx.rect(x, y, gridwid, gridhgt);
-                ctx.stroke();
-                y += gridhgt;
-            }
-            x += gridwid;
-        }
-    }
-
-    function fillGrid(x, y) {
-        var canvas = document.getElementById('paint');
-        var ctx = canvas.getContext('2d');
-
-        ctx.fillRect(x, y, 10, 10);
-    }
-
-    grid();
-</script>
+<canvas width="200" height="200" style="border: solid ">
+</canvas>
+<div style="left: 80px; top: 80px">登录</div>
 
 </body>
 </html>
