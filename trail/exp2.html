@@ -45,7 +45,7 @@
     }
 
     function paint(start_c_x, start_c_y) {
-        var grd = ctx.createRadialGradient(start_c_x, start_c_y, 2, wid / 2, hgt / 2, gridhgt / 2);
+        var grd = ctx.createRadialGradient(start_c_x, start_c_y, 2, wid / 2, hgt / 2, wid);
         grd.addColorStop(0, 'red');
         grd.addColorStop(1, 'gold');
 
@@ -71,6 +71,7 @@
 
     function fillGrid(x, y) {
         ctx.beginPath();
+        ctx.strokeStyle = "yellow";
         ctx.rect(x, y, gridwid, gridhgt);
         ctx.stroke();
     }

@@ -72,7 +72,7 @@
         var center_x = up_l_x + gridwid / 2,
             center_y = up_l_y + gridhgt / 2;
 
-        var grd = ctx.createRadialGradient(start_c_x, start_c_y, 2, center_x, center_y, gridwid)
+        var grd = ctx.createRadialGradient(start_c_x, start_c_y, 2, center_x, center_y, gridwid / 2 * Math.sqrt(2));
         grd.addColorStop(0, 'red');
         grd.addColorStop(1, 'gold');
 
@@ -80,7 +80,7 @@
         ctx.fillRect(up_l_x + 1, up_l_y + 1, gridwid - 1, gridhgt - 1);
     }
     function cleanGrid(up_l_x, up_l_y) {
-        ctx.fillStyle = 'green';
+        ctx.fillStyle = 'gold';
         ctx.fillRect(up_l_x + 1, up_l_y + 1, gridwid - 1, gridhgt - 1);
     }
 
