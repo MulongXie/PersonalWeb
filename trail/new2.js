@@ -1,4 +1,9 @@
 
-setTimeout(function () {
-    console.log('aaa');
-}, 3000);
+
+function f(func) {
+    setTimeout(function () {
+        null;
+    }, 1000);
+}
+
+f();
