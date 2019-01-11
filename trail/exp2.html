@@ -51,6 +51,7 @@
 
         ctx.fillStyle = grd;
         ctx.fillRect(1, 1, wid - 1, hgt - 1);
+
     }
 
     function grid() {
@@ -60,9 +61,9 @@
             while (y <= hgt){
                 // draw grids
                 ctx.beginPath();
+                ctx.globalAlpha = 0.1;
                 ctx.rect(x, y, gridwid, gridhgt);
                 ctx.stroke();
-
                 y += gridhgt;
             }
             x += gridwid;
@@ -72,6 +73,18 @@
     function fillGrid(x, y) {
         ctx.beginPath();
         ctx.strokeStyle = "yellow";
+
+        var al = 0.0;
+        function fadein(){
+            al += 0.2;
+            ctx.globalAlpha = al;
+            console.log(al);
+            if (al < 1.0){
+                setTimeout(fadein, 1000);
+            }
+        }
+        fadein();
+
         ctx.rect(x, y, gridwid, gridhgt);
         ctx.stroke();
     }
@@ -81,7 +94,8 @@
         ctx.fillRect(up_l_x + 1, up_l_y + 1, gridwid - 1, gridhgt - 1);
     }
 
-    paint(wid/2, hgt/2)
+    paint(wid/2, hgt/2);
+
 </script>
 
 </body>
