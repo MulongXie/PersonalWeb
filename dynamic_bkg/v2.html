@@ -18,21 +18,28 @@
     var ctx = canvas.getContext('2d');
 
     var wid = canvas.width, hgt = canvas.height;
-    var gridwid = 200, gridhgt = 200;
+    var gridwid = 50, gridhgt = 50;
 
     var pre_grid = {};
     function fetch(event) {
-        // if (pre_grid){
-        //     cleanGrid(pre_grid.x, pre_grid.y);
-        // }
         var pos = getMousePos(event);
         var up_left = {};
         up_left['x'] = Math.floor(pos.x / gridwid) * gridwid;
         up_left['y'] = Math.floor(pos.y / gridhgt) * gridhgt;
         document.getElementById('pos').innerText = "(" + up_left.x + "," + up_left.y + ")" + "(" + pos.x + "," + pos.y + ")";
-        paint(pos.x, pos.y);
-        fillGrid(up_left.x, up_left.y);
-        pre_grid = up_left;
+
+        if (! pre_grid.x){
+            pre_grid = up_left;
+        }
+        else if (pre_grid.x !== up_left.x || pre_grid.y !== up_left.y){
+            cleanGrid(pre_grid.x, pre_grid.y);
+            fillGrid(up_left.x, up_left.y);
+            console.log(pre_grid.x.toString() + " " + up_left.x.toString())
+            pre_grid = up_left;
+        }
+        else {
+        }
+
     }
 
     function getMousePos(event) {
@@ -48,49 +55,53 @@
         var grd = ctx.createRadialGradient(start_c_x, start_c_y, 2, wid / 2, hgt / 2, wid);
         grd.addColorStop(0, 'red');
         grd.addColorStop(1, 'gold');
+
         ctx.fillStyle = grd;
         ctx.fillRect(1, 1, wid - 1, hgt - 1);
 
-        grid();
-    }
-
-    function grid() {
-        var x = 0, y = 0;
-        while (x <= wid){
-            y = 0;
-            while (y <= hgt){
-                // draw grids
-                ctx.beginPath();
-                ctx.strokeStyle = 'yellow';
-                ctx.globalAlpha = 0.0;
-                ctx.rect(x, y, gridwid, gridhgt);
-                ctx.stroke();
-
-                y += gridhgt;
-            }
-            x += gridwid;
-        }
     }
 
     function fillGrid(x, y) {
-        ctx.beginPath();
+
         ctx.strokeStyle = "yellow";
-        for (var i = 0; i <= 20; i++){
-            setInterval(function () {
-                
-            });
-            console.log(i);
+
+        var al = 0.0;
+        function fadein(){
+            ctx.beginPath();
+            ctx.globalAlpha = al;
+            ctx.rect(x, y, gridwid, gridhgt);
+            ctx.stroke();
+            al += 0.1;
+
+            if (al < 1.0){
+                setTimeout(fadein, 50);
+            }
         }
-        ctx.rect(x, y, gridwid, gridhgt);
-        ctx.stroke();
+        fadein();
     }
 
-    function cleanGrid(up_l_x, up_l_y) {
-        ctx.fillStyle = 'green';
-        ctx.fillRect(up_l_x + 1, up_l_y + 1, gridwid - 1, gridhgt - 1);
+    function cleanGrid(x, y) {
+
+        ctx.strokeStyle = "black";
+
+        var al = 1.0;
+        function fadeout() {
+            ctx.beginPath();
+            ctx.globalAlpha = al;
+            ctx.rect(x, y, gridwid, gridhgt);
+            ctx.stroke();
+            console.log(al);
+            al -= 0.1;
+
+            if (al > 0.0){
+                setTimeout(fadeout, 200);
+            }
+        }
+        fadeout();
     }
 
-    paint(wid/2, hgt/2)
+    paint(wid/2, hgt/2);
+
 </script>
 
 </body>

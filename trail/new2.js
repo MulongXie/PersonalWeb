@@ -1,11 +1,6 @@
 
 
-var i = 0;
+var a = {'x':1, 'y':2};
+var b = {'x':1, 'y':2};
 
-function f() {
-    i += 1;
-    console.log(i);
-    setTimeout(f, 1000);
-}
-
-f();
+console.log(a === b);
