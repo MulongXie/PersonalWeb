@@ -9,36 +9,64 @@
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
 
-    function hexgon(base, x_bias, y_bias){
+    function Hexagon(points) {
+        this.points = points;
+    }
+
+    function hexagon(base, x_bias, y_bias, points){
+
+        var p0 = {}, p1 = {}, p2 = {}, p3 = {}, p4 = {}, p5 = {};
+        p0['x'] = (Math.sqrt(3) / 2 + x_bias) * base;
+        p0['y'] = (0 + y_bias) * base;
+        points.push(p0);
+        p1['x'] = (0 + x_bias) * base;
+        p1['y'] = (1 / 2 + y_bias) * base;
+        points.push(p1);
+        p2['x'] = (0 + x_bias) * base;
+        p2['y'] = (3 / 2 + y_bias) * base;
+        points.push(p2);
+        p3['x'] = (Math.sqrt(3) / 2 + x_bias) * base;
+        p3['y'] = (2 + y_bias) * base;
+        points.push(p3);
+        p4['x'] = (Math.sqrt(3) + x_bias) * base;
+        p4['y'] = (3 / 2 + y_bias) * base;
+        points.push(p4);
+        p5['x'] = (Math.sqrt(3) + x_bias) * base;
+        p5['y'] = (1 / 2 + y_bias) * base;
+        points.push(p5);
+
+        console.log(points);
+
         ctx.beginPath();
-        ctx.moveTo((Math.sqrt(3) / 2 + x_bias) * base, (0 + y_bias) * base);
-        ctx.lineTo((0 + x_bias) * base, (1 / 2 + y_bias) * base);
-        ctx.lineTo((0 + x_bias) * base, (3 / 2 + y_bias) * base);
-        ctx.lineTo((Math.sqrt(3) / 2 + x_bias) * base, (2 + y_bias) * base);
-        ctx.lineTo((Math.sqrt(3) + x_bias) * base, (3 / 2 + y_bias) * base);
-        ctx.lineTo((Math.sqrt(3) + x_bias) * base, (1 / 2 + y_bias) * base);
-        ctx.lineTo((Math.sqrt(3) / 2 + x_bias) * base, (0 + y_bias) * base);
+        ctx.moveTo(points[0].x, points[0].y);
+        for (var i = 1; i < 6; i++){
+            ctx.lineTo(points[i].x, points[i].y);
+        }
+        ctx.lineTo(points[0].x, points[0].y);
         ctx.stroke();
     }
 
-
-    function hexgonGrid(base, row, column) {
+    var hexes = [];
+    function hexagonGrid(base, row, column) {
         var row_index = 0;
         for (var i = 0; i < row; i+= 0.75){
-
             var odd_bias_i = 0,
                 odd_bias_j = 0;
             if (row_index % 2 !== 0){
                 odd_bias_j = 0.5;
             }
             for (var j = 0; j < column; j++){
-                hexgon(base, ((j - odd_bias_j) * Math.sqrt(3)), ((i - odd_bias_i) * 2));
+                var points = [];
+                hexagon(base, ((j - odd_bias_j) * Math.sqrt(3)), ((i - odd_bias_i) * 2), points);
+                var hex = new Hexagon(points);
+                hexes.push(hex);
             }
             row_index += 1;
         }
     }
 
-    hexgonGrid(10, 10, 6);
+    hexagonGrid(10, 10, 6);
+    console.log(hexes)
 
 </script>
 </body>
