@@ -113,6 +113,27 @@
         ctx.fillRect(1, 1, wid - 1, hgt - 1);
     }
 
+    function draw() {
+        ctx.clearRect(0, 0, wid, hgt);
+        paint(wid / 2, hgt / 2);
+        for (var i = 0; i < grids.length; i++){
+            var points = grids[i].points;
+            ctx.beginPath();
+            ctx.moveTo(points[0].x, points[0].y);
+            for (var j = 1; j < 6; j++){
+                ctx.lineTo(points[j].x, points[j].y);
+            }
+            ctx.lineTo(points[0].x, points[0].y);
+            ctx.stroke();
+
+            if (grids[i].isSelected){
+                ctx.fillStyle = 'yellow';
+                ctx.fill();
+            }
+
+        }
+    }
+
     function select(mouse_pos){
         var x = mouse_pos.x,
             y = mouse_pos.y;
@@ -121,14 +142,18 @@
         for (var i = 0; i < grids.length; i++){
             if (inhex(grids[i], mouse_pos, 50)){
                 document.getElementById('pos').innerText = "(" + grids[i].points[6].x + "," + grids[i].points[6].y + ")" + "(" + mouse_pos.x + "," + mouse_pos.y + ")";
-                return grids[i];
+                grids[i].color = 'yellow';
+                grids[i].isSelected = true;
+                break;
             }
         }
+        draw();
+        return grids[i];
     }
 
     function inhex(hexagon, mouse_pos, base){
         var center = hexagon.points[6];
-        console.log('xxxxxxxx')
+        console.log('xxxxxxxx');
         var relative_y = Math.abs(mouse_pos.y - center.y),
             relative_x = Math.abs(mouse_pos.x - center.x);
         if (relative_y > base || relative_x > Math.sqrt(3) / 2 * base){
