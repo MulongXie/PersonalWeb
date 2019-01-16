@@ -1,6 +1,6 @@
 
+function f(a, b) {
+    console.log(a + b);
+}
 
-var a = {'x':1, 'y':2};
-var b = {'x':1, 'y':2};
-
-console.log(a === b);
+setTimeout(f, 1000, "ri", "sss")

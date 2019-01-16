@@ -1,0 +1,106 @@
+<html>
+<head>
+    <style>
+    </style>
+
+</head>
+<body>
+<canvas id="paint" width="1200" height="600" onmousemove="fetch(event)"></canvas>
+
+<div style="position: absolute; left: 50px; top: 50px">
+    <h1 id="pos"></h1>
+</div>
+
+
+<script>
+
+    var canvas = document.getElementById('paint');
+    var ctx = canvas.getContext('2d');
+
+    var wid = canvas.width,
+        hgt = canvas.height;
+    var gridwid = 50,
+        gridhgt = 50;
+
+    var grids = [];
+
+    var pre_grid;
+    function fetch(e) {
+        var pos = getMousePos(e);
+        var i = Math.floor(pos.x / gridwid),
+            j = Math.floor(pos.y / gridhgt);
+
+
+        if (pre_grid != null) {
+            pre_grid.color = "red";
+            grids[i][j].color = 'green';
+        }
+        pre_grid = grids[i][j];
+
+        draw();
+    }
+
+    function getMousePos(event) {
+        var e = event;
+        var scrollX = document.documentElement.scrollLeft;
+        var scrollY = document.documentElement.scrollTop;
+        var x = e.clientX + scrollX;
+        var y = e.clientY + scrollY;
+        return { 'x': x, 'y': y };
+    }
+
+    function Grid(x, y, width, height, color, alpha) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+        this.color = color;
+        this.alpha = alpha;
+        this.isSeclected = false;
+    }
+
+
+    function splitGrid() {
+        var x = 0, y = 0;
+        while (x <= wid){
+            y = 0;
+            var row = [];
+            while (y <= hgt){
+                var grid = new Grid(x, y, gridwid, gridhgt, "yellow", 0.8);
+                row.push(grid);
+                y += gridhgt;
+            }
+            grids.push(row);
+            x += gridwid;
+        }
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, wid, hgt);
+
+        for (var i = 0; i < grids.length; i++){
+            for (var j = 0; j < grids[i].length; j++){
+                var grid = grids[i][j];
+
+                ctx.globalAlpha = grid.alpha;
+                ctx.beginPath();
+                ctx.rect(grid.x, grid.y, grid.width, grid.height);
+                ctx.fillStyle = grid.color;
+                ctx.strokeStyle = "black";
+                ctx.fill();
+                ctx.stroke();
+            }
+        }
+    }
+
+    function fadein(grid) {
+
+    }
+
+    splitGrid();
+
+
+</script>
+
+</body>
+</html>

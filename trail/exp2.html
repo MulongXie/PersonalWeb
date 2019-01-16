@@ -61,6 +61,24 @@
 
     }
 
+    function grid() {
+        var x = 0, y = 0;
+        while (x <= wid){
+            y = 0;
+            while (y <= hgt){
+                // draw grids
+                ctx.beginPath();
+                ctx.rect(x, y, gridwid, gridhgt);
+                ctx.stroke();
+
+                cleanGrid(x, y);
+
+                y += gridhgt;
+            }
+            x += gridwid;
+        }
+    }
+
     function fillGrid(x, y) {
 
         ctx.strokeStyle = "yellow";
@@ -71,7 +89,7 @@
             ctx.globalAlpha = al;
             ctx.rect(x, y, gridwid, gridhgt);
             ctx.stroke();
-            al += 0.1;
+            al += 0.05;
 
             if (al < 1.0){
                 setTimeout(fadein, 50);
@@ -81,6 +99,8 @@
     }
 
     function cleanGrid(x, y) {
+
+        ctx.strokeStyle = "black";
 
         var al = 1.0;
         function fadeout() {
@@ -92,13 +112,14 @@
             al -= 0.1;
 
             if (al > 0.0){
-                setTimeout(fadeout, 200);
+                setTimeout(fadeout, 50);
             }
         }
         fadeout();
     }
 
     paint(wid/2, hgt/2);
+    // grid();
 
 </script>
 
