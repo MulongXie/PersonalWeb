@@ -32,12 +32,16 @@
 
 
         if (pre_grid != null) {
-            pre_grid.color = "red";
-            grids[i][j].color = 'green';
+            if (pre_grid.x !== grids[i][j].x || pre_grid.y !== grids[i][j].y) {
+                pre_grid.color = "red";
+                grids[i][j].color = 'green';
+                pre_grid.isSelected = false;
+                grids[i][j].isSelected = true;
+                draw();
+                pre_grid = grids[i][j];
+            }
         }
         pre_grid = grids[i][j];
-
-        draw();
     }
 
     function getMousePos(event) {
@@ -56,7 +60,7 @@
         this.height = height;
         this.color = color;
         this.alpha = alpha;
-        this.isSeclected = false;
+        this.isSelected = false;
     }
 
 
@@ -75,6 +79,7 @@
         }
     }
 
+    var alpha = 0.0;
     function draw() {
         ctx.clearRect(0, 0, wid, hgt);
 
@@ -82,14 +87,43 @@
             for (var j = 0; j < grids[i].length; j++){
                 var grid = grids[i][j];
 
-                ctx.globalAlpha = grid.alpha;
-                ctx.beginPath();
-                ctx.rect(grid.x, grid.y, grid.width, grid.height);
-                ctx.fillStyle = grid.color;
-                ctx.strokeStyle = "black";
-                ctx.fill();
-                ctx.stroke();
+                if (grid.isSelected){
+                    alpha = 0.0;
+                    fadein(grid);
+                    grid.isSelected = false;
+                }
+                else{
+                    ctx.globalAlpha = grid.alpha;
+                    ctx.beginPath();
+                    ctx.rect(grid.x, grid.y, grid.width, grid.height);
+                    ctx.fillStyle = grid.color;
+                    ctx.strokeStyle = "black";
+                    ctx.fill();
+                    ctx.stroke();
+                }
+
+
             }
+        }
+    }
+
+
+    function fadein(grid) {
+
+        ctx.globalAlpha = alpha;
+        ctx.beginPath();
+        ctx.rect(grid.x, grid.y, grid.width, grid.height);
+        ctx.fillStyle = grid.color;
+        ctx.strokeStyle = "black";
+        ctx.fill();
+        ctx.stroke();
+
+        alpha += 0.2;
+        if (alpha < 1.0){
+            setTimeout(fadein, 50, grid);
+        }
+        else{
+            draw();
         }
     }
 
