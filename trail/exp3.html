@@ -1,45 +1,149 @@
 <html>
+<head>
+    <style>
+    </style>
+
+</head>
 <body>
+<canvas id="paint" width="1200" height="600" onmousemove="fetch(event)"></canvas>
 
-<canvas id="myCanvas" width="1200" height="6000" style="border:1px solid #d3d3d3;">
+<div style="position: absolute; left: 50px; top: 50px">
+    <h1 id="pos"></h1>
+</div>
 
-</canvas>
 
 <script>
-    var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
 
-    function hexgon(base, x_bias, y_bias){
-        ctx.beginPath();
-        ctx.moveTo((Math.sqrt(3) / 2 + x_bias) * base, (0 + y_bias) * base);
-        ctx.lineTo((0 + x_bias) * base, (1 / 2 + y_bias) * base);
-        ctx.lineTo((0 + x_bias) * base, (3 / 2 + y_bias) * base);
-        ctx.lineTo((Math.sqrt(3) / 2 + x_bias) * base, (2 + y_bias) * base);
-        ctx.lineTo((Math.sqrt(3) + x_bias) * base, (3 / 2 + y_bias) * base);
-        ctx.lineTo((Math.sqrt(3) + x_bias) * base, (1 / 2 + y_bias) * base);
-        ctx.lineTo((Math.sqrt(3) / 2 + x_bias) * base, (0 + y_bias) * base);
-        ctx.stroke();
+    var canvas = document.getElementById('paint');
+    var ctx = canvas.getContext('2d');
+
+    var wid = canvas.width,
+        hgt = canvas.height;
+    var gridwid = 50,
+        gridhgt = 50;
+
+    var grids = [];
+
+    function fetch(e) {
+        var pos = getMousePos(e);
+        var i = Math.floor(pos.x / gridwid),
+            j = Math.floor(pos.y / gridhgt);
+
+        var grid = select(pos);
     }
 
+    function getMousePos(event) {
+        var e = event;
+        var scrollX = document.documentElement.scrollLeft;
+        var scrollY = document.documentElement.scrollTop;
+        var x = e.clientX + scrollX;
+        var y = e.clientY + scrollY;
+        return { 'x': x, 'y': y };
+    }
 
-    function hexgonGrid(base) {
-        var row = 0;
-        for (var i = 0; i < 10; i+= 0.75){
+    function Grid(points, color, alpha, isFill) {
+        this.points = points;
+        this.color = color;
+        this.alpha = alpha;
+        this.isSelected = false;
+        this.isFill = isFill;
+    }
 
+    function hexagonGrid(base, row, column) {
+        var row_index = 0;
+        for (var i = 0; i < row; i+= 0.75){
             var odd_bias_i = 0,
                 odd_bias_j = 0;
-            if (row % 2 !== 0){
+            if (row_index % 2 !== 0){
                 odd_bias_j = 0.5;
             }
-            for (var j = 0; j < 6; j++){
-                hexgon(base, ((j - odd_bias_j) * Math.sqrt(3)), ((i - odd_bias_i) * 2));
+            for (var j = 0; j < column; j++){
+                var points = [];
+                hexagon(base, ((j - odd_bias_j) * Math.sqrt(3)), ((i - odd_bias_i) * 2), points);
+                var hex = new Grid(points, "yellow", 1.0, false);
+                grids.push(hex);
             }
-            row += 1;
+            row_index += 1;
         }
     }
 
-    hexgonGrid(50);
+    function hexagon(base, x_bias, y_bias, points){
+
+        var p0 = {}, p1 = {}, p2 = {}, p3 = {}, p4 = {}, p5 = {};
+        p0['x'] = (Math.sqrt(3) / 2 + x_bias) * base;
+        p0['y'] = (0 + y_bias) * base;
+        points.push(p0);
+        p1['x'] = (0 + x_bias) * base;
+        p1['y'] = (1 / 2 + y_bias) * base;
+        points.push(p1);
+        p2['x'] = (0 + x_bias) * base;
+        p2['y'] = (3 / 2 + y_bias) * base;
+        points.push(p2);
+        p3['x'] = (Math.sqrt(3) / 2 + x_bias) * base;
+        p3['y'] = (2 + y_bias) * base;
+        points.push(p3);
+        p4['x'] = (Math.sqrt(3) + x_bias) * base;
+        p4['y'] = (3 / 2 + y_bias) * base;
+        points.push(p4);
+        p5['x'] = (Math.sqrt(3) + x_bias) * base;
+        p5['y'] = (1 / 2 + y_bias) * base;
+        points.push(p5);
+
+        var center = {};
+        center['x'] = p0.x;
+        center['y'] = p0.y + base;
+        points.push(center);
+
+        ctx.beginPath();
+        ctx.moveTo(points[0].x, points[0].y);
+        for (var i = 1; i < 6; i++){
+            ctx.lineTo(points[i].x, points[i].y);
+        }
+        ctx.lineTo(points[0].x, points[0].y);
+        ctx.stroke();
+    }
+
+    function paint(start_c_x, start_c_y) {
+        var grd = ctx.createRadialGradient(start_c_x, start_c_y, 2, wid / 2, hgt / 2, wid);
+        grd.addColorStop(0, 'red');
+        grd.addColorStop(1, 'gold');
+
+        ctx.globalAlpha = 1.0;
+        ctx.fillStyle = grd;
+        ctx.fillRect(1, 1, wid - 1, hgt - 1);
+    }
+
+    function select(mouse_pos){
+        var x = mouse_pos.x,
+            y = mouse_pos.y;
+
+        console.log(grids.length);
+        for (var i = 0; i < grids.length; i++){
+            if (inhex(grids[i], mouse_pos, 50)){
+                console.log('gggggggg');
+                document.getElementById('pos').innerText = "(" + grids[i].points[6].x + "," + grids[i].points[6].y + ")" + "(" + mouse_pos.x + "," + mouse_pos.y + ")";
+                return grids[i];
+            }
+        }
+    }
+
+    function inhex(hexagon, mouse_pos, base){
+        var center = hexagon.points[6];
+        console.log('xxxxxxxx')
+        var relative_y = Math.abs(mouse_pos.y - center.y),
+            relative_x = Math.abs(mouse_pos.x - center.x);
+        console.log(relative_x.toString() + " " + relative_y.toString());
+        if (relative_y > base || relative_x > Math.sqrt(3) / 2 * base){
+
+            return false;
+        }
+        else return (base - relative_y) > relative_x / Math.sqrt(3);
+    }
+
+    paint(wid / 2, hgt / 2);
+    hexagonGrid(50, 10, 20);
 
 </script>
+
 </body>
 </html>

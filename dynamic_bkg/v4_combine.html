@@ -24,25 +24,12 @@
 
     var grids = [];
 
-    var pre_grid;
     function fetch(e) {
         var pos = getMousePos(e);
         var i = Math.floor(pos.x / gridwid),
             j = Math.floor(pos.y / gridhgt);
 
-        if (pre_grid != null) {
-            if (pre_grid.x !== grids[i][j].x || pre_grid.y !== grids[i][j].y) {
-                pre_grid.color = "yellow";
-                pre_grid.isSelected = false;
-                pre_grid.isFill = false;
-                grids[i][j].color = 'green';
-                grids[i][j].isSelected = true;
-                grids[i][j].isFill = true;
-                draw();
-                pre_grid = grids[i][j];
-            }
-        }
-        pre_grid = grids[i][j];
+        var grid = select(pos);
     }
 
     function getMousePos(event) {
@@ -54,31 +41,66 @@
         return { 'x': x, 'y': y };
     }
 
-    function Grid(x, y, width, height, color, alpha, isFill) {
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
+    function Grid(points, color, alpha, isFill) {
+        this.points = points;
         this.color = color;
         this.alpha = alpha;
         this.isSelected = false;
-        this.isFill = false;
+        this.isFill = isFill;
     }
 
-
-    function splitGrid() {
-        var x = 0, y = 0;
-        while (x <= wid){
-            y = 0;
-            var row = [];
-            while (y <= hgt){
-                var grid = new Grid(x, y, gridwid, gridhgt, "yellow", 1.0, false);
-                row.push(grid);
-                y += gridhgt;
+    function hexagonGrid(base, row, column) {
+        var row_index = 0;
+        for (var i = 0; i < row; i+= 0.75){
+            var odd_bias_i = 0,
+                odd_bias_j = 0;
+            if (row_index % 2 !== 0){
+                odd_bias_j = 0.5;
             }
-            grids.push(row);
-            x += gridwid;
+            for (var j = 0; j < column; j++){
+                var points = [];
+                hexagon(base, ((j - odd_bias_j) * Math.sqrt(3)), ((i - odd_bias_i) * 2), points);
+                var hex = new Grid(points, "yellow", 1.0, false);
+                grids.push(hex);
+            }
+            row_index += 1;
         }
+    }
+
+    function hexagon(base, x_bias, y_bias, points){
+
+        var p0 = {}, p1 = {}, p2 = {}, p3 = {}, p4 = {}, p5 = {};
+        p0['x'] = (Math.sqrt(3) / 2 + x_bias) * base;
+        p0['y'] = (0 + y_bias) * base;
+        points.push(p0);
+        p1['x'] = (0 + x_bias) * base;
+        p1['y'] = (1 / 2 + y_bias) * base;
+        points.push(p1);
+        p2['x'] = (0 + x_bias) * base;
+        p2['y'] = (3 / 2 + y_bias) * base;
+        points.push(p2);
+        p3['x'] = (Math.sqrt(3) / 2 + x_bias) * base;
+        p3['y'] = (2 + y_bias) * base;
+        points.push(p3);
+        p4['x'] = (Math.sqrt(3) + x_bias) * base;
+        p4['y'] = (3 / 2 + y_bias) * base;
+        points.push(p4);
+        p5['x'] = (Math.sqrt(3) + x_bias) * base;
+        p5['y'] = (1 / 2 + y_bias) * base;
+        points.push(p5);
+
+        var center = {};
+        center['x'] = p0.x;
+        center['y'] = p0.y + base;
+        points.push(center);
+
+        ctx.beginPath();
+        ctx.moveTo(points[0].x, points[0].y);
+        for (var i = 1; i < 6; i++){
+            ctx.lineTo(points[i].x, points[i].y);
+        }
+        ctx.lineTo(points[0].x, points[0].y);
+        ctx.stroke();
     }
 
     function paint(start_c_x, start_c_y) {
@@ -91,54 +113,32 @@
         ctx.fillRect(1, 1, wid - 1, hgt - 1);
     }
 
-    var alpha = 0.0;
-    function draw() {
-        ctx.clearRect(0, 0, wid, hgt);
-        paint(wid / 2, hgt / 2);
+    function select(mouse_pos){
+        var x = mouse_pos.x,
+            y = mouse_pos.y;
 
+        console.log(grids.length);
         for (var i = 0; i < grids.length; i++){
-            for (var j = 0; j < grids[i].length; j++){
-                var grid = grids[i][j];
-
-                if (grid.isSelected){
-                    alpha = 0.0;
-                    fadein(grid);
-                    grid.isSelected = false;
-                }
-                else{
-                    drawGrid(grid, grid.alpha);
-                }
+            if (inhex(grids[i], mouse_pos, 50)){
+                document.getElementById('pos').innerText = "(" + grids[i].points[6].x + "," + grids[i].points[6].y + ")" + "(" + mouse_pos.x + "," + mouse_pos.y + ")";
+                return grids[i];
             }
         }
     }
 
-    function drawGrid(grid, al) {
-        ctx.globalAlpha = al;
-        ctx.beginPath();
-        ctx.rect(grid.x, grid.y, grid.width, grid.height);
-        ctx.strokeStyle = grid.color;
-        ctx.stroke();
-
-        if (grid.isFill){
-            ctx.fillStyle = grid.color;
-            ctx.fill();
+    function inhex(hexagon, mouse_pos, base){
+        var center = hexagon.points[6];
+        console.log('xxxxxxxx')
+        var relative_y = Math.abs(mouse_pos.y - center.y),
+            relative_x = Math.abs(mouse_pos.x - center.x);
+        if (relative_y > base || relative_x > Math.sqrt(3) / 2 * base){
+            return false;
         }
-    }
-
-
-    function fadein(grid) {
-        drawGrid(grid, alpha);
-        alpha += 0.1;
-        if (alpha < 1.0){
-            setTimeout(fadein, 50, grid);
-        }
-        else{
-            draw();
-        }
+        else return (base - relative_y) > relative_x / Math.sqrt(3);
     }
 
     paint(wid / 2, hgt / 2);
-    splitGrid();
+    hexagonGrid(50, 10, 20);
 
 </script>
 

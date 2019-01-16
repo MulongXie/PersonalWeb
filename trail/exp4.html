@@ -64,9 +64,6 @@
         this.isSelected = false;
         this.isFill = false;
     }
-    function Hexagon(points) {
-        this.points = points;
-    }
 
 
     function splitGrid() {
@@ -95,7 +92,6 @@
         ctx.lineTo((Math.sqrt(3) / 2 + x_bias) * base, (0 + y_bias) * base);
         ctx.stroke();
     }
-    
 
     function paint(start_c_x, start_c_y) {
         var grd = ctx.createRadialGradient(start_c_x, start_c_y, 2, wid / 2, hgt / 2, wid);
