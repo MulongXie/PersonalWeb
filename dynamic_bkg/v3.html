@@ -32,7 +32,7 @@
 
         if (pre_grid != null) {
             if (pre_grid.x !== grids[i][j].x || pre_grid.y !== grids[i][j].y) {
-                pre_grid.color = "white";
+                pre_grid.color = "yellow";
                 pre_grid.isSelected = false;
                 pre_grid.isFill = false;
                 grids[i][j].color = 'green';
@@ -141,7 +141,7 @@
 
     paint(wid / 2, hgt / 2);
     splitGrid();
-
+    draw();
 
 </script>
 
