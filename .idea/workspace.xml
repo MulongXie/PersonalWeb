@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a46e6b0-d688-42c9-bf51-ed1cde9df34b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic_bkg/v3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic_bkg/v3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trail/exp2.html" beforeDir="false" afterPath="$PROJECT_DIR$/trail/exp2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trail/exp4.html" beforeDir="false" afterPath="$PROJECT_DIR$/trail/exp4.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,8 +22,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/trail/exp4.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="356">
-                    <caret line="43" column="31" lean-forward="true" selection-end-line="131" selection-end-column="7" />
+                  <state relative-caret-position="255">
+                    <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
                     <folding>
                       <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     </folding>
@@ -57,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trail/exp2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="116" column="9" lean-forward="true" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
+            <state relative-caret-position="375">
+              <caret line="59" column="45" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -69,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dynamic_bkg/v3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+            <state relative-caret-position="208">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -115,13 +114,13 @@
       <list>
         <option value="$PROJECT_DIR$/dynamic_bkg/v1.html" />
         <option value="$PROJECT_DIR$/dynamic_bkg/v2.html" />
-        <option value="$PROJECT_DIR$/trail/exp2.html" />
         <option value="$PROJECT_DIR$/exp4.html" />
         <option value="$PROJECT_DIR$/trail/exp3.html" />
         <option value="$PROJECT_DIR$/trail/exp1.html" />
         <option value="$PROJECT_DIR$/trail/new2.js" />
-        <option value="$PROJECT_DIR$/trail/exp4.html" />
         <option value="$PROJECT_DIR$/dynamic_bkg/v3.html" />
+        <option value="$PROJECT_DIR$/trail/exp2.html" />
+        <option value="$PROJECT_DIR$/trail/exp4.html" />
       </list>
     </option>
   </component>
@@ -205,12 +204,12 @@
       <workItem from="1547190969721" duration="5077000" />
       <workItem from="1547425155621" duration="4572000" />
       <workItem from="1547525033423" duration="5651000" />
-      <workItem from="1547598370725" duration="19263000" />
+      <workItem from="1547598370725" duration="20855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63784000" />
+    <option name="totallyTimeSpent" value="65376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="814" height="867" extended-state="0" />
@@ -314,10 +313,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trail/exp4.html">
+    <entry file="file://$PROJECT_DIR$/dynamic_bkg/v3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="43" column="31" lean-forward="true" selection-end-line="131" selection-end-column="7" />
+        <state relative-caret-position="208">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -326,18 +325,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trail/exp2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="116" column="9" lean-forward="true" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
+        <state relative-caret-position="375">
+          <caret line="59" column="45" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_bkg/v3.html">
+    <entry file="file://$PROJECT_DIR$/trail/exp4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+        <state relative-caret-position="255">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
