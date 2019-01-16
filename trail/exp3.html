@@ -1,17 +1,44 @@
 <html>
-<head>
-    <style>
-    </style>
-
-</head>
 <body>
-<canvas id="paint" width="1200" height="600" onmousemove="fetch(event)"></canvas>
 
+<canvas id="myCanvas" width="1200" height="6000" style="border:1px solid #d3d3d3;">
+
+</canvas>
 
 <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
 
+    function hexgon(base, x_bias, y_bias){
+        ctx.beginPath();
+        ctx.moveTo((Math.sqrt(3) / 2 + x_bias) * base, (0 + y_bias) * base);
+        ctx.lineTo((0 + x_bias) * base, (1 / 2 + y_bias) * base);
+        ctx.lineTo((0 + x_bias) * base, (3 / 2 + y_bias) * base);
+        ctx.lineTo((Math.sqrt(3) / 2 + x_bias) * base, (2 + y_bias) * base);
+        ctx.lineTo((Math.sqrt(3) + x_bias) * base, (3 / 2 + y_bias) * base);
+        ctx.lineTo((Math.sqrt(3) + x_bias) * base, (1 / 2 + y_bias) * base);
+        ctx.lineTo((Math.sqrt(3) / 2 + x_bias) * base, (0 + y_bias) * base);
+        ctx.stroke();
+    }
+
+
+    function hexgonGrid(base) {
+        for (var i = 0; i < 2; i++){
+
+            var odd_bias_i = 0,
+                odd_bias_j = 0;
+            if (i % 2 !== 0){
+                odd_bias_i = 0.25;
+                odd_bias_j = 0.5;
+            }
+            for (var j = 0; j < 2; j++){
+                hexgon(base, ((j - odd_bias_j) * Math.sqrt(3)), ((i - odd_bias_i) * 2));
+            }
+        }
+    }
+
+    hexgonGrid(50);
 
 </script>
-
 </body>
 </html>

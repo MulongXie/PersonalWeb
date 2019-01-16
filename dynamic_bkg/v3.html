@@ -19,8 +19,8 @@
 
     var wid = canvas.width,
         hgt = canvas.height;
-    var gridwid = 50,
-        gridhgt = 50;
+    var gridwid = 200,
+        gridhgt = 200;
 
     var grids = [];
 
@@ -128,7 +128,7 @@
 
     function fadein(grid) {
         drawGrid(grid, alpha);
-        alpha += 0.2;
+        alpha += 0.1;
         if (alpha < 1.0){
             setTimeout(fadein, 50, grid);
         }
