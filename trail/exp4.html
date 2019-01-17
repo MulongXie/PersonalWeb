@@ -30,7 +30,7 @@
         var i = Math.floor(pos.x / gridwid),
             j = Math.floor(pos.y / gridhgt);
 
-        if (pre_grid != null) {
+        if (pre_grid !== undefined) {
             if (pre_grid.x !== grids[i][j].x || pre_grid.y !== grids[i][j].y) {
                 pre_grid.color = "yellow";
                 pre_grid.isSelected = false;
