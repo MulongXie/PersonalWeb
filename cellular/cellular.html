@@ -20,6 +20,7 @@
 
     var wid = canvas.width,
         hgt = canvas.height;
+    var grid_wid = 50;
 
     var pre_grid;
     function fetch(e) {
@@ -62,7 +63,9 @@
     }
 
     paint();
-    hexagonGrid(50, 10, 20);
+    hexagonGrid(grid_wid, hgt / (grid_wid * 2), wid / (Math.sqrt(3) * grid_wid));
+
+    console.log(hgt / (grid_wid * 2), wid / (Math.sqrt(3) * grid_wid));
 
 </script>
 

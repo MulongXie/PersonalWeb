@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a46e6b0-d688-42c9-bf51-ed1cde9df34b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/cellular/cellular.html" beforeDir="false" afterPath="$PROJECT_DIR$/cellular/cellular.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cellular/draw.js" beforeDir="false" afterPath="$PROJECT_DIR$/cellular/draw.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cellular/hexagon.js" beforeDir="false" afterPath="$PROJECT_DIR$/cellular/hexagon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trail/exp2.html" beforeDir="false" afterPath="$PROJECT_DIR$/trail/exp2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trail/new2.js" beforeDir="false" afterPath="$PROJECT_DIR$/trail/new2.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cellular/hexagon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="170">
+              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -30,37 +29,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cellular/draw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cellular/cellular.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="697">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/trail/exp2.html">
+        <entry file="file://$PROJECT_DIR$/cellular/cellular.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-              <folding>
-                <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="212">
+              <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trail/new2.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -97,12 +78,12 @@
         <option value="$PROJECT_DIR$/trail/exp4.html" />
         <option value="$PROJECT_DIR$/trail/exp3.html" />
         <option value="$PROJECT_DIR$/cellular/draw.html" />
-        <option value="$PROJECT_DIR$/cellular/draw.js" />
         <option value="$PROJECT_DIR$/dynamic_bkg/v4_combine.html" />
+        <option value="$PROJECT_DIR$/trail/new2.js" />
+        <option value="$PROJECT_DIR$/trail/exp2.html" />
+        <option value="$PROJECT_DIR$/cellular/draw.js" />
         <option value="$PROJECT_DIR$/cellular/hexagon.js" />
         <option value="$PROJECT_DIR$/cellular/cellular.html" />
-        <option value="$PROJECT_DIR$/trail/exp2.html" />
-        <option value="$PROJECT_DIR$/trail/new2.js" />
       </list>
     </option>
   </component>
@@ -196,12 +177,12 @@
       <workItem from="1547598370725" duration="33928000" />
       <workItem from="1547688613596" duration="14000" />
       <workItem from="1547714438922" duration="1728000" />
-      <workItem from="1547774597050" duration="8585000" />
+      <workItem from="1547774597050" duration="9538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88776000" />
+    <option name="totallyTimeSpent" value="89729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="814" height="867" extended-state="0" />
@@ -367,38 +348,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cellular/hexagon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cellular/draw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cellular/cellular.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trail/new2.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/trail/exp2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cellular/draw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cellular/hexagon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cellular/cellular.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
         </state>
       </provider>
     </entry>

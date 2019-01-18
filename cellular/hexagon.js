@@ -1,5 +1,3 @@
-
-
 function Grid(points, color, alpha, isFill) {
     this.points = points;
     this.color = color;

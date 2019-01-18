@@ -41,7 +41,6 @@ function drawGrid(grid, al) {
     }
 }
 
-
 function fadein(grid){
     drawGrid(grid, alpha);
     alpha += 0.1;
