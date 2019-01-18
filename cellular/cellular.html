@@ -1,8 +1,7 @@
 <html>
 <head>
-    <style>
-    </style>
-
+    <script type="application/javascript" src="draw.js"></script>
+    <script type="application/javascript" src="hexagon.js"></script>
 </head>
 <body>
 <canvas id="paint" style="position: fixed; left: 0; top: 0;" width="1800" height="1000" onmousemove="fetch(event)"></canvas>
@@ -17,10 +16,10 @@
     var canvas = document.getElementById('paint');
     var ctx = canvas.getContext('2d');
 
+    var grids = [];
+
     var wid = canvas.width,
         hgt = canvas.height;
-
-    var grids = [];
 
     var pre_grid;
     function fetch(e) {
@@ -61,18 +60,6 @@
         paint();
         draw();
     }
-
-    function Grid(points, color, alpha, isFill) {
-        this.points = points;
-        this.color = color;
-        this.alpha = alpha;
-        this.isSelected = false;
-        this.isFill = isFill;
-    }
-
-
-
-
 
     paint();
     hexagonGrid(50, 10, 20);

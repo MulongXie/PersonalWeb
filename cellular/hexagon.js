@@ -1,3 +1,13 @@
+
+
+function Grid(points, color, alpha, isFill) {
+    this.points = points;
+    this.color = color;
+    this.alpha = alpha;
+    this.isSelected = false;
+    this.isFill = isFill;
+}
+
 function hexagonGrid(base, row, column) {
     var row_index = 0;
     for (var i = 0; i < row; i+= 0.75){
