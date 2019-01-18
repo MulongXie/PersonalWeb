@@ -5,7 +5,7 @@
 
 </head>
 <body>
-<canvas id="paint" width="1200" height="600" onmousemove="fetch(event)"></canvas>
+<canvas id="paint" style="border: solid;" width="1200" height="600" onmousemove="fetch(event)"></canvas>
 
 <div style="position: absolute; left: 50px; top: 50px">
     <h1 id="pos"></h1>
@@ -20,105 +20,12 @@
     var wid = canvas.width, hgt = canvas.height;
     var gridwid = 50, gridhgt = 50;
 
-    var pre_grid = {};
-    function fetch(event) {
-        var pos = getMousePos(event);
-        var up_left = {};
-        up_left['x'] = Math.floor(pos.x / gridwid) * gridwid;
-        up_left['y'] = Math.floor(pos.y / gridhgt) * gridhgt;
-        document.getElementById('pos').innerText = "(" + up_left.x + "," + up_left.y + ")" + "(" + pos.x + "," + pos.y + ")";
+    window.addEventListener("resize", resizeCanvas, false);
 
-        if (! pre_grid.x){
-            pre_grid = up_left;
-        }
-        else if (pre_grid.x !== up_left.x || pre_grid.y !== up_left.y){
-            cleanGrid(pre_grid.x, pre_grid.y);
-            fillGrid(up_left.x, up_left.y);
-            console.log(pre_grid.x.toString() + " " + up_left.x.toString())
-            pre_grid = up_left;
-        }
-        else {
-        }
-
+    function resizeCanvas() {
+        canvas.width = window.innerWidth - 200;
+        canvas.height = window.innerHeight - 200;
     }
-
-    function getMousePos(event) {
-        var e = event;
-        var scrollX = document.documentElement.scrollLeft;
-        var scrollY = document.documentElement.scrollTop;
-        var x = e.clientX + scrollX;
-        var y = e.clientY + scrollY;
-        return { 'x': x, 'y': y };
-    }
-
-    function paint(start_c_x, start_c_y) {
-        var grd = ctx.createRadialGradient(start_c_x, start_c_y, 2, wid / 2, hgt / 2, wid);
-        grd.addColorStop(0, 'red');
-        grd.addColorStop(1, 'gold');
-
-        ctx.fillStyle = grd;
-        ctx.fillRect(1, 1, wid - 1, hgt - 1);
-    }
-
-    function grid() {
-        var x = 0, y = 0;
-        while (x <= wid){
-            y = 0;
-            while (y <= hgt){
-                // draw grids
-                ctx.beginPath();
-                ctx.rect(x, y, gridwid, gridhgt);
-                ctx.stroke();
-
-                cleanGrid(x, y);
-
-                y += gridhgt;
-            }
-            x += gridwid;
-        }
-    }
-
-    function fillGrid(x, y) {
-
-        ctx.strokeStyle = "yellow";
-
-        var al = 0.0;
-        function fadein(){
-            ctx.beginPath();
-            ctx.globalAlpha = al;
-            ctx.rect(x, y, gridwid, gridhgt);
-            ctx.stroke();
-            al += 0.05;
-
-            if (al < 1.0){
-                setTimeout(fadein, 50);
-            }
-        }
-        fadein();
-    }
-
-    function cleanGrid(x, y) {
-
-        ctx.strokeStyle = "black";
-
-        var al = 1.0;
-        function fadeout() {
-            ctx.beginPath();
-            ctx.globalAlpha = al;
-            ctx.rect(x, y, gridwid, gridhgt);
-            ctx.stroke();
-            console.log(al);
-            al -= 0.1;
-
-            if (al > 0.0){
-                setTimeout(fadeout, 50);
-            }
-        }
-        fadeout();
-    }
-
-    paint(wid/2, hgt/2);
-    // grid();
 
 </script>
 
