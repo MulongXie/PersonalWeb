@@ -27,9 +27,6 @@
     var pre_grid;
     function fetch(e) {
         var pos = getMousePos(e);
-        var i = Math.floor(pos.x / gridwid),
-            j = Math.floor(pos.y / gridhgt);
-
         var grid = select(pos);
 
         if (pre_grid !== undefined){
@@ -63,6 +60,9 @@
     function resizeCanvas() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+        wid = canvas.width;
+        hgt = canvas.height;
+        paint();
         draw();
     }
 
@@ -128,7 +128,7 @@
         ctx.stroke();
     }
 
-    function paint(start_c_x, start_c_y) {
+    function paint(start_c_x=wid / 2, start_c_y=hgt / 2) {
         var grd = ctx.createRadialGradient(start_c_x, start_c_y, 2, wid / 2, hgt / 2, wid);
         grd.addColorStop(0, 'red');
         grd.addColorStop(1, 'gold');
@@ -204,7 +204,7 @@
         }
     }
 
-    paint(wid / 2, hgt / 2);
+    paint();
     hexagonGrid(50, 10, 20);
 
 </script>
