@@ -5,28 +5,17 @@
 
 </head>
 <body>
-<canvas id="paint" style="border: solid;" width="1200" height="600" onmousemove="fetch(event)"></canvas>
+<canvas id="paint" style="border: solid;" width="1200" height="600"></canvas>
 
-<div style="position: absolute; left: 50px; top: 50px">
-    <h1 id="pos"></h1>
+<div style="position: absolute; left: 50px; top: 50px" onclick="f()">
+    <h1 id="pos">a</h1>
 </div>
 
 
+<script type="application/javascript" src="new2.js"></script>
 <script>
-
-    var canvas = document.getElementById('paint');
-    var ctx = canvas.getContext('2d');
-
-    var wid = canvas.width, hgt = canvas.height;
-    var gridwid = 50, gridhgt = 50;
-
-    window.addEventListener("resize", resizeCanvas, false);
-
-    function resizeCanvas() {
-        canvas.width = window.innerWidth - 200;
-        canvas.height = window.innerHeight - 200;
-    }
-
+    f();
+    alert(a.toString());
 </script>
 
 </body>

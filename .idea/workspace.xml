@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a46e6b0-d688-42c9-bf51-ed1cde9df34b" name="Default Changelist" comment="" />
+    <list default="true" id="1a46e6b0-d688-42c9-bf51-ed1cde9df34b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cellular/draw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cellular/hexagon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic_bkg/v4_combine.html" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic_bkg/v4_combine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trail/exp2.html" beforeDir="false" afterPath="$PROJECT_DIR$/trail/exp2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trail/new2.js" beforeDir="false" afterPath="$PROJECT_DIR$/trail/new2.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,22 +21,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trail/exp4.html">
+        <entry file="file://$PROJECT_DIR$/cellular/hexagon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="127">
+              <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dynamic_bkg/v4_combine.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="62" column="27" lean-forward="true" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+            <state relative-caret-position="-697">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -41,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trail/exp2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="272">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -52,14 +56,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trail/exp3.html">
+        <entry file="file://$PROJECT_DIR$/trail/new2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2971">
-              <caret line="6" column="6" lean-forward="true" selection-end-line="212" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cellular/draw.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cellular/cellular.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -70,6 +88,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -77,6 +96,8 @@
     <findStrings>
       <find>isFill</find>
       <find>conso</find>
+      <find>inhex</find>
+      <find>gridwi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,14 +110,18 @@
         <option value="$PROJECT_DIR$/dynamic_bkg/v2.html" />
         <option value="$PROJECT_DIR$/exp4.html" />
         <option value="$PROJECT_DIR$/trail/exp1.html" />
-        <option value="$PROJECT_DIR$/trail/new2.js" />
         <option value="$PROJECT_DIR$/dynamic_bkg/v3.html" />
         <option value="$PROJECT_DIR$/dynamic_bkg/v3_fadein.html" />
         <option value="$PROJECT_DIR$/dynamic_bkg/hexagon.html" />
-        <option value="$PROJECT_DIR$/trail/exp2.html" />
         <option value="$PROJECT_DIR$/trail/exp4.html" />
         <option value="$PROJECT_DIR$/trail/exp3.html" />
+        <option value="$PROJECT_DIR$/cellular/draw.html" />
+        <option value="$PROJECT_DIR$/cellular/hexagon.js" />
+        <option value="$PROJECT_DIR$/cellular/draw.js" />
+        <option value="$PROJECT_DIR$/trail/exp2.html" />
+        <option value="$PROJECT_DIR$/trail/new2.js" />
         <option value="$PROJECT_DIR$/dynamic_bkg/v4_combine.html" />
+        <option value="$PROJECT_DIR$/cellular/cellular.html" />
       </list>
     </option>
   </component>
@@ -119,6 +144,11 @@
             <path>
               <item name="Personal-Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="Personal-Web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Personal-Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Personal-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="cellular" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Personal-Web" type="b2602c69:ProjectViewProjectNode" />
@@ -185,12 +215,12 @@
       <workItem from="1547598370725" duration="33928000" />
       <workItem from="1547688613596" duration="14000" />
       <workItem from="1547714438922" duration="1728000" />
-      <workItem from="1547774597050" duration="3492000" />
+      <workItem from="1547774597050" duration="8076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83683000" />
+    <option name="totallyTimeSpent" value="88267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="814" height="867" extended-state="0" />
@@ -201,7 +231,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3319209" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33050847" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -254,13 +284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trail/new1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exp4.html" />
     <entry file="file://$PROJECT_DIR$/dynamic_bkg/v1.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -269,13 +292,6 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trail/new2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -327,21 +343,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trail/exp2.html">
+    <entry file="file://$PROJECT_DIR$/cellular/v4_combine.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trail/new1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trail/exp3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2971">
-          <caret line="6" column="6" lean-forward="true" selection-end-line="212" selection-end-column="7" />
+        <state relative-caret-position="17">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -349,14 +368,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cellular/draw.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cellular/hexagon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cellular/cellular.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_bkg/v4_combine.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="62" column="27" lean-forward="true" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+        <state relative-caret-position="-697">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trail/exp2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trail/new2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cellular/draw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
         </state>
       </provider>
     </entry>

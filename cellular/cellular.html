@@ -1,0 +1,83 @@
+<html>
+<head>
+    <style>
+    </style>
+
+</head>
+<body>
+<canvas id="paint" style="position: fixed; left: 0; top: 0;" width="1800" height="1000" onmousemove="fetch(event)"></canvas>
+
+<div style="position: fixed; left: 50px; top: 50px">
+    <h1 id="pos"></h1>
+</div>
+
+
+<script>
+
+    var canvas = document.getElementById('paint');
+    var ctx = canvas.getContext('2d');
+
+    var wid = canvas.width,
+        hgt = canvas.height;
+
+    var grids = [];
+
+    var pre_grid;
+    function fetch(e) {
+        var pos = getMousePos(e);
+        var grid = select(pos);
+
+        if (pre_grid !== undefined){
+            if (pre_grid.points[6].x !== grid.points[6].x || pre_grid.points[6].y !== grid.points[6].y){
+                pre_grid.color = "yellow";
+                pre_grid.isSelected = false;
+                pre_grid.isFill = false;
+                grid.color = "yellow";
+                grid.isSelected = true;
+                grid.isFill = true;
+                draw();
+                pre_grid = grid;
+            }
+        }
+        pre_grid = grid;
+    }
+
+    function getMousePos(event) {
+        var e = event;
+        var scrollX = document.documentElement.scrollLeft;
+        var scrollY = document.documentElement.scrollTop;
+
+        var x = e.clientX + scrollX;
+        var y = e.clientY + scrollY;
+        return { 'x': x, 'y': y };
+    }
+
+    window.addEventListener("resize", resizeCanvas, false);
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        wid = canvas.width;
+        hgt = canvas.height;
+        paint();
+        draw();
+    }
+
+    function Grid(points, color, alpha, isFill) {
+        this.points = points;
+        this.color = color;
+        this.alpha = alpha;
+        this.isSelected = false;
+        this.isFill = isFill;
+    }
+
+
+
+
+
+    paint();
+    hexagonGrid(50, 10, 20);
+
+</script>
+
+</body>
+</html>
