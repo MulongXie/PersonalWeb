@@ -21,8 +21,8 @@
     var wid = canvas.width,
         hgt = canvas.height;
     var grid_wid = 50,
-        row =  wid / (Math.sqrt(3) * grid_wid),
-        column = hgt / (grid_wid * 2);
+        row =  hgt / (grid_wid * 2),
+        column = wid / (Math.sqrt(3) * grid_wid);
 
     var pre_grid;
     function fetch(e) {
