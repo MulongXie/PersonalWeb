@@ -17,6 +17,7 @@
     var ctx = canvas.getContext('2d');
 
     var grids = [];
+    var fill_color = "yellow";
 
     var wid = canvas.width,
         hgt = canvas.height;
@@ -31,10 +32,10 @@
 
         if (pre_grid !== undefined){
             if (pre_grid.points[6].x !== grid.points[6].x || pre_grid.points[6].y !== grid.points[6].y){
-                pre_grid.color = "yellow";
+                pre_grid.color = fill_color;
                 pre_grid.isSelected = false;
                 pre_grid.isFill = false;
-                grid.color = "yellow";
+                grid.color = fill_color;
                 grid.isSelected = true;
                 grid.isFill = true;
                 draw();

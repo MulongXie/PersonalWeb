@@ -1,6 +1,6 @@
 function paint(start_c_x=wid / 2, start_c_y=hgt / 2) {
     var grd = ctx.createRadialGradient(start_c_x, start_c_y, 10, wid / 2, hgt / 2, wid);
-    grd.addColorStop(0, 'red');
+    grd.addColorStop(0, '#336699');
     grd.addColorStop(1, 'gold');
 
     ctx.globalAlpha = 1.0;

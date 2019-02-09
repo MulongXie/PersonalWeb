@@ -17,7 +17,7 @@ function hexagonGrid(base, row, column) {
         for (var j = 0; j < column; j++){
             var points = [];
             hexagon(base, ((j - odd_bias_j) * Math.sqrt(3)), ((i - odd_bias_i) * 2), points);
-            var hex = new Grid(points, "yellow", 1.0, false);
+            var hex = new Grid(points, fill_color, 1.0, false);
             grids.push(hex);
         }
         row_index += 1;
@@ -74,7 +74,7 @@ function select(mouse_pos){
     for (var i = 0; i < grids.length; i++){
         if (isInHex(grids[i], mouse_pos, 50)){
             document.getElementById('pos').innerText = "(" + grids[i].points[6].x + "," + grids[i].points[6].y + ")" + "(" + mouse_pos.x + "," + mouse_pos.y + ")";
-            grids[i].color = 'yellow';
+            grids[i].color = fill_color;
             grids[i].isSelected = true;
             break;
         }
