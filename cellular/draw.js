@@ -1,3 +1,4 @@
+// paint background
 function paint(start_c_x=wid / 2, start_c_y=hgt / 2) {
     var grd = ctx.createRadialGradient(start_c_x, start_c_y, 10, wid / 2, hgt / 2, wid);
     grd.addColorStop(0, '#6699CC');
@@ -24,6 +25,7 @@ function draw() {
     }
 }
 
+// draw single grid
 function drawGrid(grid, al) {
     ctx.globalAlpha = al;
     var points = grid.points;

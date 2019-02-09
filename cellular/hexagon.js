@@ -1,3 +1,4 @@
+// class for each grid
 function Grid(points, color, alpha, isFill) {
     this.points = points;
     this.color = color;
@@ -6,6 +7,7 @@ function Grid(points, color, alpha, isFill) {
     this.isFill = isFill;
 }
 
+// divide the whole window into grids
 function hexagonGrid(base, row, column) {
     var row_index = 0;
     for (var i = 0; i < row; i+= 0.75){
@@ -60,6 +62,7 @@ function hexagon(base, x_bias, y_bias, points){
     ctx.stroke();
 }
 
+// check if the mose position in this hexagon
 function isInHex(hexagon, mouse_pos, base){
     var center = hexagon.points[6];
     var relative_y = Math.abs(mouse_pos.y - center.y),
@@ -70,6 +73,7 @@ function isInHex(hexagon, mouse_pos, base){
     else return (base - relative_y) > relative_x / Math.sqrt(3);
 }
 
+// change the status of selected grid
 function select(mouse_pos){
     for (var i = 0; i < grids.length; i++){
         if (isInHex(grids[i], mouse_pos, 50)){
