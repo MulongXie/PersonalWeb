@@ -17,10 +17,14 @@
     var ctx = canvas.getContext('2d');
 
     var grids = [];
-    var fill_color = "yellow";
+    var fill_color = "#6699CC";
 
+    // adapt the size of canvas to the browser size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     var wid = canvas.width,
         hgt = canvas.height;
+    // setting the size of grids
     var grid_wid = 50,
         row =  hgt / (grid_wid * 2),
         column = wid / (Math.sqrt(3) * grid_wid);
