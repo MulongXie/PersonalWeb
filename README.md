@@ -6,4 +6,4 @@ Building: web background (dynamic model).
 
 Suspending: personal blog.
 
-[STILL BUILDING]
+[SUSPENDING]
