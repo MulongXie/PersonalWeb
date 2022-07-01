@@ -15,6 +15,7 @@
 
 body{
     font-family: Arima, serif;
+    transition: 0.5s;
 }
 
 #cover{
@@ -35,4 +36,16 @@ body{
 
 .font-secondary{
     color: #3EB650;
+}
+
+.bg-my-secondary{
+    background-color: #3EB650;
+}
+
+.border-my-secondary{
+    border: #3EB650 solid 2px;
+}
+
+.side-nav-fixed-top{
+    height: 100vh
 }

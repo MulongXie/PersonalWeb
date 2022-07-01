@@ -7,13 +7,15 @@
     <link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="plugins/jquery/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
 <main>
     <section id="cover">
-        <div class="container-fluid py-5 text-center" style="height: 100vh">
-            <img src="static/ppl.jpg" class="" style="height: 60vh">
+        <div class="container-fluid py-5 text-center bg-light" style="height: 100vh">
+            <img src="static/image/ppl.jpg" class="" style="height: 60vh">
             <h1 class="name">Mulong Xie</h1>
             <p>Ph.D Student at Australian National University</p>
             <p>Research Interests:
@@ -25,16 +27,15 @@
     </section>
 
     <section id="content">
-        <div class="container-fluid bg-info py-5">
+        <div class="container-fluid">
             <div class="row">
-                <div id="side-nav" class="col-4 bg-light p-3">
-
+                <div id="side-nav" class="col-3 border-my-secondary p-3">
                     <div class="container-fluid text-center">
-                        <img src="static/ppl.jpg" class="rounded-circle" style="width: 80%">
-                        <h2>Wu Yanzu</h2>
+                        <img src="static/image/ppl.jpg" class="rounded-pill" style="width: 80%">
+                        <h2>Mulong Xie</h2>
                     </div>
 
-                    <nav class="navbar bg-light">
+                    <nav class="navbar">
                         <div class="container-fluid">
                             <ul class="navbar-nav nav-pills">
                                 <li class="nav-item">
@@ -50,16 +51,16 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-8 bg-primary p-5">
-                    <div id="projects" class="container bg-light mb-2" style="height: 500px">
+                <div id="side-content" class="col-9 border-my-secondary pt-2">
+                    <div id="projects" class="mb-2" style="height: 500px">
                         <h1>Projects</h1>
                     </div>
 
-                    <div id="publications" class="container bg-light mb-2" style="height: 500px">
+                    <div id="publications" class="mb-2" style="height: 500px">
                         <h1>Publications</h1>
                     </div>
 
-                    <div id="work" class="container bg-light" style="height: 500px">
+                    <div id="work" class="" style="height: 500px">
                         <h1>Working Experience</h1>
                     </div>
 
