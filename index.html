@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>Mulong Xie</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
     <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
 <main>
+    <section id="cover">
+        <div class="container-fluid py-5 text-center" style="height: 100vh">
+            <img src="static/ppl.jpg" class="" style="height: 60vh">
+            <h1 class="name">Mulong Xie</h1>
+            <p>Ph.D Student at Australian National University</p>
+            <p>Research Interests:
+                <span class="pill">Software Engineering</span>
+                <span class="pill">Computer Vision</span>
+                <span class="pill">Robotic Processing Automation</span>
+            </p>
+        </div>
+    </section>
+
     <section id="content">
         <div class="container-fluid bg-info py-5">
             <div class="row">
@@ -17,14 +31,12 @@
 
                     <div class="container-fluid text-center">
                         <img src="static/ppl.jpg" class="rounded-circle" style="width: 80%">
-                        <h2>Wu Yanzu
-
-                        </h2>
+                        <h2>Wu Yanzu</h2>
                     </div>
 
-                    <nav class="navbar bg-light navbar-light">
+                    <nav class="navbar bg-light">
                         <div class="container-fluid">
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav nav-pills">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#projects">Projects</a>
                                 </li>

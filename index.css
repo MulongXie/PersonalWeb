@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Arima;
+    src: url("static/font/Arima-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Arima-Bold;
+    src: url("static/font/Arima-Bold.ttf");
+}
+
+@font-face {
+    font-family: Smooch;
+    src: url("static/font/Smooch-Regular.ttf");
+}
+
+body{
+    font-family: Arima, serif;
+}
+
+#cover{
+    /*background-image: url("static/coverbg.jpg");*/
+}
+
+.pill{
+    border: #3EB650 solid ;
+    border-radius: 50px;
+    color: whitesmoke;
+    font-family: Arima-Bold, serif;
+    background: #3EB650;
+}
+
+.name{
+    font-family: Smooch, serif;
+}
+
+.font-secondary{
+    color: #3EB650;
+}
