@@ -13,25 +13,16 @@
     src: url("static/font/Smooch-Regular.ttf");
 }
 
-body{
-    font-family: Arima, serif;
-    transition: 0.5s;
-}
 
-#cover{
-    /*background-image: url("static/coverbg.jpg");*/
-}
-
+/***************/
+/*** General ***/
+/***************/
 .pill{
     border: #3EB650 solid ;
     border-radius: 50px;
     color: whitesmoke;
     font-family: Arima-Bold, serif;
     background: #3EB650;
-}
-
-.name{
-    font-family: Smooch, serif;
 }
 
 .font-secondary{
@@ -46,6 +37,55 @@ body{
     border: #3EB650 solid 2px;
 }
 
+.border-top-my-secondary{
+    border-top: #3EB650 solid 3px;
+}
+
+.border-bt-my-secondary{
+    border-bottom: #3EB650 solid 3px;
+}
+
+.border-left-my-secondary{
+    border-left: #3EB650 solid 3px;
+}
+
+.border-right-my-secondary{
+    border-right: #3EB650 solid 3px;
+}
+
+.rotate-left{
+    transform: rotate(-90deg);
+}
+
+/****************/
+/*** Specific ***/
+/****************/
+body{
+    font-family: Arima, serif;
+    transition: 0.5s;
+}
+
+#cover{
+    /*background-image: url("static/coverbg.jpg");*/
+}
+
+.name{
+    font-family: Smooch, serif;
+}
+
+#side-nav{
+    transition: 0.5s;
+}
+
 .side-nav-fixed-top{
     height: 100vh
+}
+
+.collapse-btn{
+    transition: 0.25s;
+}
+
+.collapse-btn:hover{
+    color: #3EB650;
+    cursor: pointer;
 }
