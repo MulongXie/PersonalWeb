@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: Arima-SemiBold;
+    src: url("static/font/Arima-SemiBold.ttf");
+}
+
+@font-face {
     font-family: Arima-Bold;
     src: url("static/font/Arima-Bold.ttf");
 }
@@ -55,6 +60,25 @@
 
 .rotate-left{
     transform: rotate(-90deg);
+}
+
+.navbar-nav{
+    width: 100%;
+}
+
+.nav-item{
+    font-family: Arima-SemiBold, serif;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #3EB650;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    color: forestgreen;
 }
 
 /****************/
