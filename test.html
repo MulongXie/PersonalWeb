@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/572cb010fd.js" crossorigin="anonymous"></script>
-</head>
 <body>
-<div class="container">
-  <h2>Asterisk Glyph</h2>
-  <p>Asterisk icon: <span class="glyphicon glyphicon-asterisk"></span></p>
-  <p>Asterisk icon as a link:
-    <a href="#">
-      <span class="glyphicon glyphicon-asterisk"></span>
-    </a>
-  </p>
-  <p>Asterisk icon on a button:
-    <button type="button" class="btn btn-default btn-sm">
-      <span class="glyphicon glyphicon-asterisk"></span> Asterisk
-    </button>
-  </p>
-  <p>Asterisk icon on a styled link button:
-    <a href="#" class="btn btn-info btn-lg">
-      <span class="glyphicon glyphicon-asterisk"></span> Asterisk
-    </a>
-  </p>
-  <p>Unicode:
-    <span class="glyphicon">&#x2a;</span>
-  </p>
-  <span class="fas fa-cloud"></span>
-</div>
+
+<h2>JavaScript Callbacks</h2>
+
+<p>Do a calculation and then display the result.</p>
+
+<p id="demo"></p>
+
+<script>
+  function f1(){
+    console.log('aaaa')
+  }
+  function f2(callback){
+    setTimeout(function (){
+      console.log('bbbb')
+    }, 1000)
+    callback()
+  }
+
+  function myDisplayer(something) {
+    document.getElementById("demo").innerHTML = something;
+  }
+
+  function myCalculator(num1, num2, myCallback) {
+    let sum = num1 + num2;
+    myCallback(sum);
+  }
+
+  // myCalculator(5, 5, myDisplayer);
+  f2(f1)
+</script>
+
 </body>
 </html>
