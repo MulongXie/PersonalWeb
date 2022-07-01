@@ -8,10 +8,16 @@ $(document).ready(function () {
         sideNavOnScroll();
     });
 
-    $('.collapse-btn').click(function (){
-        // sideNavCollapse();
-        closeSideNav = true
+    $('#collapse-btn').click(function (){
+        closeSideNav = true;
         toggleNavAndContent(true);
+        $('#open-side-nav-btn').fadeIn();
+    })
+
+    $('#open-side-nav-btn').click(function (){
+        closeSideNav = false;
+        toggleNavAndContent();
+        $('#open-side-nav-btn').fadeOut();
     })
 });
 
@@ -19,7 +25,6 @@ function sideNavOnScroll(){
     let sideNav = $('#side-nav');
     let sideContent = $('#side-content');
     let sideContentDistTop = sideContent.offset().top - $(window).scrollTop();
-
 
     if(0 < sideContentDistTop && sideContentDistTop < $(window).height() * 0.25 && ! closeSideNav && ! sideNav.is(':visible')){
         toggleNavAndContent();
