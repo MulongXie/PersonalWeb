@@ -2,35 +2,21 @@
 <html>
 <body>
 
-<h2>JavaScript Callbacks</h2>
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap" rel="stylesheet">
 
-<p>Do a calculation and then display the result.</p>
+<link href="test.css" rel="stylesheet">
 
-<p id="demo"></p>
+<div class="card">
+    <p>
+        Similar post
+    </p>
+    <h2>
+        How I recreated a Polaroid camera with CSS gradients only
+    </h2>
+</div>
 
-<script>
-  function f1(){
-    console.log('aaaa')
-  }
-  function f2(callback){
-    setTimeout(function (){
-      console.log('bbbb')
-    }, 1000)
-    callback()
-  }
 
-  function myDisplayer(something) {
-    document.getElementById("demo").innerHTML = something;
-  }
-
-  function myCalculator(num1, num2, myCallback) {
-    let sum = num1 + num2;
-    myCallback(sum);
-  }
-
-  // myCalculator(5, 5, myDisplayer);
-  f2(f1)
-</script>
 
 </body>
 </html>

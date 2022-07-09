@@ -30,40 +30,50 @@ a{
     font-size: 20px;
 }
 
+:root{
+    --primary: whitesmoke;
+    --secondary: #3EB650;
+    --background: white;
+    --green: #1FC11B;
+    --yellow: #FFD913;
+    --orange: #FF9C55;
+    --red: #FF5555;
+}
+
 .pill{
-    border: #3EB650 solid ;
+    border: var(--secondary) solid ;
     border-radius: 50px;
-    color: whitesmoke;
+    color: var(--primary);
     font-family: Arima-Bold, serif;
-    background: #3EB650;
+    background: var(--secondary);
 }
 
 .font-secondary{
-    color: #3EB650;
+    color: var(--secondary);
 }
 
 .bg-my-secondary{
-    background-color: #3EB650;
+    background-color: var(--secondary);
 }
 
 .border-my-secondary{
-    border: #3EB650 solid 2px;
+    border: var(--secondary) solid 2px;
 }
 
 .border-top-my-secondary{
-    border-top: #3EB650 solid 3px;
+    border-top: var(--secondary) solid 3px;
 }
 
 .border-bt-my-secondary{
-    border-bottom: #3EB650 solid 3px;
+    border-bottom: var(--secondary) solid 3px;
 }
 
 .border-left-my-secondary{
-    border-left: #3EB650 solid 3px;
+    border-left: var(--secondary) solid 3px;
 }
 
 .border-right-my-secondary{
-    border-right: #3EB650 solid 3px;
+    border-right: var(--secondary) solid 3px;
 }
 
 .rotate-left{
@@ -84,7 +94,7 @@ a{
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #3EB650;
+    background-color: var(--secondary);
     padding-left: 10px;
     transition: 0.5s;
 }
@@ -126,25 +136,51 @@ body{
 }
 
 #collapse-btn:hover{
-    color: #3EB650;
+    color: var(--secondary);
     cursor: pointer;
 }
 
 #open-side-nav-btn{
-    color: whitesmoke;
+    color: var(--primary);
     position: fixed;
     top: 20px;
     left: 20px;
     z-index: 1000;
-    background-color: #3EB650;
+    background-color: var(--secondary);
     padding: 5px;
     transition: 0.25s;
     display: none;
-    border: whitesmoke solid 1px;
+    border: var(--primary) solid 1px;
     border-radius: 25px;
 }
 
 #open-side-nav-btn:hover{
     cursor: pointer;
     background-color: forestgreen;
+}
+
+.my-card{
+    height: 200px;
+    margin-top: 80px;
+
+    background-color: var(--background);
+    display: block;
+    min-height: 90px;
+    padding: 15px;
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--yellow),
+    20px -20px 0 -3px var(--background), 20px -20px var(--orange),
+    30px -30px 0 -3px var(--background), 30px -30px var(--red);
+    transition: box-shadow 0.5s, top 1s, left 1s;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.my-card:hover {
+    top: -30px;
+    left: 30px;
+    box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--yellow),
+    0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+    0 0 0 -3px var(--background), 0 0 0 0  var(--red);
 }
