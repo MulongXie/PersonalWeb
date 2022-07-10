@@ -170,7 +170,7 @@ body{
     box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--yellow),
     20px -20px 0 -3px var(--background), 20px -20px var(--orange),
     30px -30px 0 -3px var(--background), 30px -30px var(--red);
-    transition: box-shadow 0.5s, top 1s, left 1s;
+    transition: box-shadow 0.5s, top 0.5s, left 0.5s;
     position: relative;
     top: 0;
     left: 0;
@@ -183,4 +183,13 @@ body{
     box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--yellow),
     0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
     0 0 0 -3px var(--background), 0 0 0 0  var(--red);
+}
+
+.nav-level-secondary{
+    margin: 20px 0 10px 20px;
+}
+
+.projects-years{
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
