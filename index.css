@@ -46,6 +46,17 @@ a{
     color: var(--primary);
     font-family: Arima-Bold, serif;
     background: var(--secondary);
+    white-space: pre;
+}
+
+.tag{
+    border: var(--secondary) solid ;
+    border-radius: 50px;
+    color: var(--primary);
+    font-family: Arima-Bold, serif;
+    background: var(--secondary);
+    white-space: pre;
+    font-size: 12px;
 }
 
 .font-secondary{
@@ -101,10 +112,6 @@ a{
 
 .nav-link:hover{
     color: forestgreen;
-}
-
-.word-no-break{
-    white-space: pre;
 }
 
 .divider{
@@ -167,7 +174,7 @@ body{
 }
 
 .my-card{
-    height: 250px;
+    /*height: 250px;*/
     margin-top: 80px;
 
     background-color: var(--background);
@@ -199,4 +206,12 @@ body{
 .projects-years{
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+.projects-img{
+    max-width: 100%;
+}
+
+.projects-img-ar{
+    max-width: 32%;
 }
