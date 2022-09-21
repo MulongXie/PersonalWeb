@@ -40,7 +40,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ml/Code/github/PersonalWeb&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ml/Code/github/Robot-Visual-Testing&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -52,7 +52,7 @@
       <recent name="$PROJECT_DIR$/static/image" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.new2.js">
     <configuration name="new2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/trail/new2.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -99,7 +99,11 @@
       <workItem from="1653970106677" duration="17846000" />
       <workItem from="1656549396051" duration="39458000" />
       <workItem from="1657242131273" duration="27324000" />
-      <workItem from="1658878577614" duration="563000" />
+      <workItem from="1658878577614" duration="1055000" />
+      <workItem from="1658879671173" duration="403000" />
+      <workItem from="1661085556013" duration="2000" />
+      <workItem from="1663112659467" duration="613000" />
+      <workItem from="1663627307427" duration="2051000" />
     </task>
     <servers />
   </component>
