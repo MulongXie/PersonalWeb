@@ -208,10 +208,14 @@ body{
     margin-bottom: 40px;
 }
 
-.projects-img{
+.projects-img-1{
     max-width: 100%;
 }
 
-.projects-img-ar{
+.projects-img-2{
+    max-width: 48%;
+}
+
+.projects-img-3{
     max-width: 32%;
 }
