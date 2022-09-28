@@ -29,8 +29,10 @@ const renderer = new THREE.WebGLRenderer({
 
 
 // 2. setup basics
-camera.position.setZ(100);
-// document.body.appendChild(renderer.domElement)
+const spaceTexture = new THREE.TextureLoader().load('public/pinkskyextend.jpg')
+scene.background = spaceTexture
+camera.position.setY(-200);
+camera.position.setZ(25);
 renderer.setSize(innerWidth, innerHeight)
 renderer.setPixelRatio(devicePixelRatio)
 
@@ -42,10 +44,11 @@ scene.add(light)
 
 
 // 4. create objects
-const planeGeometry = new THREE.PlaneGeometry(400, 400, 50, 50)
+const planeGeometry = new THREE.PlaneGeometry(600, 500, 70, 70)
 const planeMaterial = new THREE.MeshPhongMaterial(
     {side:THREE.DoubleSide, flatShading: true, vertexColors: true})
 const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial)
+// planeMesh.translateY(- (innerHeight / 5))
 scene.add(planeMesh)
 
 
@@ -67,7 +70,6 @@ function vertexPosition(){
     }
     planeMesh.geometry.attributes.position.originalPosition = planeMesh.geometry.attributes.position.array
     planeMesh.geometry.attributes.position.randomValues = randomValues
-    console.log(planeMesh.geometry.attributes.position)
 }
 vertexPosition()
 // add color for each vertex
@@ -161,7 +163,7 @@ function animate(){
 
     // 7.2 animate the wave
     const {array, originalPosition, randomValues} = planeMesh.geometry.attributes.position
-    const movingRatio = 0.015
+    const movingRatio = 0.02
     frame += 0.01
     for (let i = 0; i < array.length; i+=3){
         // x
