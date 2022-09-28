@@ -31,9 +31,7 @@ import {func} from "three/addons/nodes/shadernode/ShaderNodeBaseElements.js";
 // 1. fundamental elements: scene, camera, renderer
 const scene = new THREE.Scene()
 const camera = new THREE.PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 2000)
-const renderer = new THREE.WebGLRenderer({
-    canvas: document.getElementById('background'),
-});
+const renderer = new THREE.WebGLRenderer();
 
 
 // 2. setup basics
@@ -43,6 +41,7 @@ camera.position.setY(-200);
 camera.position.setZ(25);
 renderer.setSize(innerWidth, innerHeight)
 renderer.setPixelRatio(devicePixelRatio)
+document.body.appendChild(renderer.domElement)
 
 
 // 3. add light
@@ -59,6 +58,24 @@ const planeMaterial = new THREE.MeshPhongMaterial(
 const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial)
 // planeMesh.translateY(- (innerHeight / 5))
 scene.add(planeMesh)
+// 4.2 stars
+const starGeometry = new THREE.BufferGeometry()
+const starMaterial = new THREE.PointsMaterial(
+    {color: 0xffffff, size: 3})
+// init star points
+const starVertices = []
+const starVelocities = []
+for (let i = 0; i < 10000; i++){
+    const x = (Math.random() - 0.5) * 2000
+    const y = (Math.random()) * 2000 + 400
+    const z = (Math.random() - 0.5) * 2000
+    starVertices.push(x, y, z)
+    starVelocities.push(0)
+}
+starGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starVertices, 3))
+starGeometry.setAttribute('velocity', new THREE.Float32BufferAttribute(starVelocities, 1))
+const stars = new THREE.Points(starGeometry, starMaterial)
+scene.add(stars)
 
 
 // 5. manipulate objects
@@ -175,6 +192,19 @@ function animate(){
     }
     planeMesh.geometry.attributes.position.needsUpdate = true
 
+    // 7.3 animate the stars
+    const {position, velocity} = stars.geometry.attributes
+    for (let i = 0; i < position.array.length; i += 3){
+        if (i % 3 === 0){
+            position.array[i] += 0.01
+            position.array[i+1] += 0.01
+            position.array[i+2] += 0.01
+            if (position.array[i] > 2000){position.array[i] = 2000}
+            if (position.array[i+1] > 2000){position.array[i+1] = 2000}
+            if (position.array[i+2] > 2000){position.array[i+2] = 2000}
+        }
+    }
+    stars.geometry.attributes.position.needsUpdate = true
 }
 animate()
 
