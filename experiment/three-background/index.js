@@ -18,6 +18,14 @@ import {func} from "three/addons/nodes/shadernode/ShaderNodeBaseElements.js";
 // gui.add(world.plane, 'height', 1, 80).onChange(changePlaneByDat)
 // gui.add(world.plane, 'widthSeg', 1, 80).onChange(changePlaneByDat)
 // gui.add(world.plane, 'heightSeg', 1, 80).onChange(changePlaneByDat)
+// adjust the attributes through dat.gui
+// function changePlaneByDat(){
+//     planeMesh.geometry.dispose()
+//     planeMesh.geometry = new THREE.PlaneGeometry(
+//         world.plane.width, world.plane.height, world.plane.widthSeg, world.plane.heightSeg)
+//     planeVertexPosition()
+//     planeVertexColor()
+// }
 
 
 // 1. fundamental elements: scene, camera, renderer
@@ -44,6 +52,7 @@ scene.add(light)
 
 
 // 4. create objects
+// 4.1 plane
 const planeGeometry = new THREE.PlaneGeometry(600, 500, 70, 70)
 const planeMaterial = new THREE.MeshPhongMaterial(
     {side:THREE.DoubleSide, flatShading: true, vertexColors: true})
@@ -53,8 +62,8 @@ scene.add(planeMesh)
 
 
 // 5. manipulate objects
-// set position for each vertex
-function vertexPosition(){
+// set position for each vertex in the plane
+function planeVertexPosition(){
     const randomValues = []
     const {array} = planeMesh.geometry.attributes.position
     for (let i = 0; i < array.length; i++){
@@ -71,9 +80,9 @@ function vertexPosition(){
     planeMesh.geometry.attributes.position.originalPosition = planeMesh.geometry.attributes.position.array
     planeMesh.geometry.attributes.position.randomValues = randomValues
 }
-vertexPosition()
-// add color for each vertex
-function vertexColor(){
+planeVertexPosition()
+// add color for each vertex in the plane
+function planeVertexColor(){
     const vertexColors = []
     for (let i = 0; i < planeMesh.geometry.attributes.position.count; i++){
         // change each individual vertex's color
@@ -82,15 +91,8 @@ function vertexColor(){
     planeMesh.geometry.setAttribute(
         'color', new THREE.BufferAttribute(new Float32Array(vertexColors), 3))
 }
-vertexColor()
-// adjust the attributes through dat.gui
-function changePlaneByDat(){
-    planeMesh.geometry.dispose()
-    planeMesh.geometry = new THREE.PlaneGeometry(
-        world.plane.width, world.plane.height, world.plane.widthSeg, world.plane.heightSeg)
-    vertexPosition()
-    vertexColor()
-}
+planeVertexColor()
+
 
 
 // 6. mouse interactions
@@ -115,10 +117,10 @@ function animate(){
     requestAnimationFrame(animate)
     renderer.render(scene, camera)
 
-    // use the rayCaster to point to the object where the mouse is hovering
+    // 7.1 change the plane color while hovering
     rayCaster.setFromCamera(mouse, camera)
+    // use the rayCaster to point to the object where the mouse is hovering
     const intersects = rayCaster.intersectObject(planeMesh)
-    // 7.1 change the color while hovering
     if (intersects.length > 0){
         const {color} = intersects[0].object.geometry.attributes
         // 1 of 3 vertices
