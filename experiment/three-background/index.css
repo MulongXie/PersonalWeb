@@ -1,3 +1,225 @@
 body{
     margin: 0;
 }
+
+@font-face {
+    font-family: Arima;
+    src: url("static/font/Arima-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Arima-SemiBold;
+    src: url("static/font/Arima-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Arima-Bold;
+    src: url("static/font/Arima-Bold.ttf");
+}
+
+@font-face {
+    font-family: Smooch;
+    src: url("static/font/Smooch-Regular.ttf");
+}
+
+
+/***************/
+/*** General ***/
+/***************/
+p{
+    font-size: 20px;
+}
+
+a{
+    font-size: 20px;
+}
+
+:root{
+    --primary: whitesmoke;
+    --secondary: #3EB650;
+    --background: white;
+    --green: #1FC11B;
+    --yellow: #FFD913;
+    --orange: #FF9C55;
+    --red: #FF5555;
+}
+
+.pill{
+    border: var(--secondary) solid ;
+    border-radius: 50px;
+    color: var(--primary);
+    font-family: Arima-Bold, serif;
+    background: var(--secondary);
+    white-space: pre;
+}
+
+.tag{
+    border: var(--secondary) solid ;
+    border-radius: 50px;
+    color: var(--primary);
+    font-family: Arima-Bold, serif;
+    background: var(--secondary);
+    white-space: pre;
+    font-size: 12px;
+}
+
+.font-secondary{
+    color: var(--secondary);
+}
+
+.bg-my-secondary{
+    background-color: var(--secondary);
+}
+
+.border-my-secondary{
+    border: var(--secondary) solid 2px;
+}
+
+.border-top-my-secondary{
+    border-top: var(--secondary) solid 3px;
+}
+
+.border-bt-my-secondary{
+    border-bottom: var(--secondary) solid 3px;
+}
+
+.border-left-my-secondary{
+    border-left: var(--secondary) solid 3px;
+}
+
+.border-right-my-secondary{
+    border-right: var(--secondary) solid 3px;
+}
+
+.rotate-left{
+    transform: rotate(-90deg);
+}
+
+.navbar{
+    padding: 10px;
+}
+
+.navbar-nav{
+    width: 100%;
+}
+
+.nav-item{
+    font-family: Arima-SemiBold, serif;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: var(--secondary);
+    padding-left: 10px;
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    color: forestgreen;
+}
+
+.divider{
+    margin: 40px auto;
+    width: 80%;
+    border: var(--secondary) dashed 2px;
+    /*box-shadow: 0 0 12px ;*/
+}
+
+/****************/
+/*** Specific ***/
+/****************/
+body{
+    font-family: Arima, serif;
+    transition: 1s;
+}
+
+#cover{
+    /*background-image: url("static/coverbg.jpg");*/
+}
+
+.name{
+    font-family: Smooch, serif;
+}
+
+#side-nav{
+    transition: 0.5s;
+}
+
+.side-nav-fixed-top{
+    height: 100vh
+}
+
+#collapse-btn{
+    transition: 0.25s;
+}
+
+#collapse-btn:hover{
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+#open-side-nav-btn{
+    color: var(--primary);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: var(--secondary);
+    padding: 5px;
+    transition: 0.25s;
+    display: none;
+    border: var(--primary) solid 1px;
+    border-radius: 25px;
+}
+
+#open-side-nav-btn:hover{
+    cursor: pointer;
+    background-color: forestgreen;
+}
+
+.my-card{
+    /*height: 250px;*/
+    margin-top: 80px;
+
+    background-color: var(--background);
+    display: block;
+    min-height: 90px;
+    padding: 15px;
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--yellow),
+    20px -20px 0 -3px var(--background), 20px -20px var(--orange),
+    30px -30px 0 -3px var(--background), 30px -30px var(--red);
+    transition: box-shadow 0.5s, top 0.5s, left 0.5s;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.my-card:hover {
+    top: -30px;
+    left: 30px;
+    box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--yellow),
+    0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+    0 0 0 -3px var(--background), 0 0 0 0  var(--red);
+}
+
+.nav-level-secondary{
+    margin: 10px 0 10px 20px;
+}
+
+.projects-years{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.projects-img-1{
+    max-width: 100%;
+}
+
+.projects-img-2{
+    max-width: 48%;
+}
+
+.projects-img-3{
+    max-width: 32%;
+}
