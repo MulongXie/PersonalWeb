@@ -4,21 +4,21 @@ import {OrbitControls} from "three/addons/controls/OrbitControls.js";
 import gsap from 'gsap'
 import {func} from "three/addons/nodes/shadernode/ShaderNodeBaseElements.js";
 
-// 0. add dat gui
+// // 0. add dat gui
 // const gui = new dat.GUI()
 // const world = {
 //     plane: {
-//         width : 25,
-//         height : 25,
-//         widthSeg : 25,
-//         heightSeg : 25
+//         width : 1300,
+//         height : 500,
+//         widthSeg : 120,
+//         heightSeg : 70
 //     }
 // }
-// gui.add(world.plane, 'width', 1, 80).onChange(changePlaneByDat)
-// gui.add(world.plane, 'height', 1, 80).onChange(changePlaneByDat)
-// gui.add(world.plane, 'widthSeg', 1, 80).onChange(changePlaneByDat)
-// gui.add(world.plane, 'heightSeg', 1, 80).onChange(changePlaneByDat)
-// adjust the attributes through dat.gui
+// gui.add(world.plane, 'width', 1, 2000).onChange(changePlaneByDat)
+// gui.add(world.plane, 'height', 1, 1000).onChange(changePlaneByDat)
+// gui.add(world.plane, 'widthSeg', 1, 150).onChange(changePlaneByDat)
+// gui.add(world.plane, 'heightSeg', 1, 150).onChange(changePlaneByDat)
+// // adjust the attributes through dat.gui
 // function changePlaneByDat(){
 //     planeMesh.geometry.dispose()
 //     planeMesh.geometry = new THREE.PlaneGeometry(
@@ -52,7 +52,7 @@ scene.add(light)
 
 // 4. create objects
 // 4.1 plane
-const planeGeometry = new THREE.PlaneGeometry(600, 500, 70, 70)
+const planeGeometry = new THREE.PlaneGeometry(1300, 500, 120, 70)
 const planeMaterial = new THREE.MeshPhongMaterial(
     {side:THREE.DoubleSide, flatShading: true, vertexColors: true})
 const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial)
@@ -66,7 +66,7 @@ const starMaterial = new THREE.PointsMaterial(
 const starVertices = []
 const starVelocities = []
 for (let i = 0; i < 10000; i++){
-    const x = (Math.random() - 0.5) * 2000
+    const x = (Math.random() - 0.5) * 4000
     const y = (Math.random()) * 2000 + 400
     const z = (Math.random() - 0.5) * 2000
     starVertices.push(x, y, z)
