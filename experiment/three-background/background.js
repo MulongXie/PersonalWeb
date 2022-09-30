@@ -26,6 +26,12 @@ import {func} from "three/addons/nodes/shadernode/ShaderNodeBaseElements.js";
 //     planeVertexPosition()
 //     planeVertexColor()
 // }
+// const gui = new dat.GUI()
+// const cameraRotate = {'x': 2}
+// gui.add(cameraRotate, 'x', 0, 2).onChange(rotateCamera)
+// function rotateCamera(){
+//     camera.rotation.x = cameraRotate.x
+// }
 
 
 // 1. fundamental elements: scene, camera, renderer
@@ -224,12 +230,24 @@ function animate(){
 animate()
 
 
-// 8 update when window size changing
+// 8. update when window size changing
 function onWindowResize(){
     camera.aspect = innerWidth / innerHeight
     camera.updateProjectionMatrix()
     renderer.setSize(innerWidth, innerHeight)
 }
 addEventListener('resize', onWindowResize, false)
+
+
+// 9. rotate the camera while scrolling
+function onScroll(){
+    const top = document.body.getBoundingClientRect().top
+    const cameraRot = 1 + top / innerHeight
+    console.log(top, innerHeight, cameraRot)
+    if (cameraRot >= 0){
+        camera.rotation.x = cameraRot
+    }
+}
+addEventListener('scroll', onScroll, false)
 
 renderer.render(scene, camera)
