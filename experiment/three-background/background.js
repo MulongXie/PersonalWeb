@@ -37,8 +37,9 @@ const renderer = new THREE.WebGLRenderer();
 // 2. setup basics
 const spaceTexture = new THREE.TextureLoader().load('public/pinkskyextend.jpg')
 scene.background = spaceTexture
-camera.position.setY(-200);
-camera.position.setZ(25);
+camera.position.setY(-50)
+camera.position.setZ(200)
+camera.rotation.x = 1
 renderer.setSize(innerWidth, innerHeight)
 renderer.setPixelRatio(devicePixelRatio)
 document.body.appendChild(renderer.domElement)
@@ -128,7 +129,7 @@ planeVertexColor()
 
 // 6. mouse interactions
 // 6.1 orbit control using mouse
-new OrbitControls(camera, renderer.domElement)
+// new OrbitControls(camera, renderer.domElement)
 // 6.2 hover action
 const rayCaster = new THREE.Raycaster
 const mouse = {
@@ -222,5 +223,13 @@ function animate(){
 }
 animate()
 
-renderer.render(scene, camera)
 
+// 8 update when window size changing
+function onWindowResize(){
+    camera.aspect = innerWidth / innerHeight
+    camera.updateProjectionMatrix()
+    renderer.setSize(innerWidth, innerHeight)
+}
+addEventListener('resize', onWindowResize, false)
+
+renderer.render(scene, camera)

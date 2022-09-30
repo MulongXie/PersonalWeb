@@ -1,5 +1,23 @@
+:root{
+    --primary: wheat;
+    --secondary: #3EB650;
+    --background: white;
+    --green: #1FC11B;
+    --yellow: #FFD913;
+    --orange: #FF9C55;
+    --red: #FF5555;
+}
+
 body{
     margin: 0;
+    font-family: Arima, serif;
+    transition: 1s;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    color: var(--primary);
 }
 
 @font-face {
@@ -34,14 +52,10 @@ a{
     font-size: 20px;
 }
 
-:root{
-    --primary: whitesmoke;
-    --secondary: #3EB650;
-    --background: white;
-    --green: #1FC11B;
-    --yellow: #FFD913;
-    --orange: #FF9C55;
-    --red: #FF5555;
+canvas{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
 }
 
 .pill{
@@ -128,17 +142,22 @@ a{
 /****************/
 /*** Specific ***/
 /****************/
-body{
-    font-family: Arima, serif;
-    transition: 1s;
-}
-
 #cover{
     /*background-image: url("static/coverbg.jpg");*/
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
 }
 
 .name{
     font-family: Smooch, serif;
+}
+
+#content{
+    position: relative;
+    z-index: 10;
+    top: 100vh;
 }
 
 #side-nav{
@@ -175,6 +194,9 @@ body{
 #open-side-nav-btn:hover{
     cursor: pointer;
     background-color: forestgreen;
+}
+
+#side-content{
 }
 
 .my-card{
