@@ -50,6 +50,13 @@ p{
 
 a{
     font-size: 20px;
+    color: var(--primary);
+
+}
+
+a:hover{
+    color: var(--secondary);
+
 }
 
 canvas{
@@ -129,7 +136,7 @@ canvas{
 }
 
 .nav-link:hover{
-    color: forestgreen;
+    color: var(--primary);
 }
 
 .divider{
@@ -137,6 +144,14 @@ canvas{
     width: 80%;
     border: var(--secondary) dashed 2px;
     /*box-shadow: 0 0 12px ;*/
+}
+
+.modal-content{
+    background: #4A5FC1;
+}
+
+.lead{
+    font-weight: 500;
 }
 
 /****************/
@@ -244,4 +259,29 @@ canvas{
 
 .projects-img-3{
     max-width: 32%;
+}
+
+.modal-img-1{
+    max-width: 90%;
+}
+
+.modal-my-caption{
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 9px;
+}
+
+.modal-my-title{
+    color: var(--secondary);
+}
+
+.my-bold-italic{
+    color: var(--secondary);
+    font-style: italic;
+    font-weight: 600;
+}
+
+.my-bold{
+    color: var(--secondary);
+    font-weight: 600;
 }

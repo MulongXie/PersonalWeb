@@ -5,6 +5,8 @@ $(document).ready(function () {
     $(window).scroll(function () {
         sideNavOnScroll();
     });
+    // add tool tips on image
+    $('[data-toggle="tooltip"]').tooltip();
 });
 
 function sideNavOnScroll(){
