@@ -243,7 +243,6 @@ addEventListener('resize', onWindowResize, false)
 function onScroll(){
     const top = document.body.getBoundingClientRect().top
     const cameraRot = 1 + top / innerHeight
-    console.log(top, innerHeight, cameraRot)
     if (cameraRot >= 0){
         camera.rotation.x = cameraRot
     }

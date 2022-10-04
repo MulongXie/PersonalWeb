@@ -265,6 +265,10 @@ canvas{
     max-width: 90%;
 }
 
+.modal-img-2{
+    max-width: 48%;
+}
+
 .modal-my-caption{
     font-size: 18px;
     font-style: italic;
@@ -273,6 +277,7 @@ canvas{
 
 .modal-my-title{
     color: var(--secondary);
+    font-weight: 600;
 }
 
 .my-bold-italic{
@@ -284,4 +289,9 @@ canvas{
 .my-bold{
     color: var(--secondary);
     font-weight: 600;
+}
+
+.my-italic{
+    color: var(--secondary);
+    font-style: italic;
 }
