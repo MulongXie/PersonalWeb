@@ -51,7 +51,7 @@ p{
 a{
     font-size: 20px;
     color: var(--primary);
-
+    margin-left: 10px;
 }
 
 a:hover{
@@ -263,6 +263,10 @@ canvas{
 
 .modal-img-1{
     max-width: 90%;
+}
+
+.modal-img-1-5{
+    max-width: 66%;
 }
 
 .modal-img-2{
