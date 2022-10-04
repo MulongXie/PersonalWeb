@@ -91,7 +91,7 @@
                             <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-semantic">
                                 <div class="row" style="height: 100%">
                                     <div class="col-4 border-right-my-secondary">
-                                        <h3>UI Semantic Understanding</h3>
+                                        <h3>Visual UI Semantic Understanding</h3>
                                         <p class="lead">From <span class="font-secondary fw-bold">visual aspect (image)</span> to intelligently analyze the UI semantics, including <span class="font-secondary fw-bold">visual attributes (shape, location)</span> and <span class="font-secondary fw-bold">semantics (class, role, functionality)</span> of the elements and widget blocks.
                                             Benefiting plenty of UI automation tasks such as <span class="font-secondary fw-bold">auto testing</span>, <span class="font-secondary fw-bold">UI design search </span> and <span class="font-secondary fw-bold">screen reader</span>.
                                         </p>
@@ -490,12 +490,51 @@
                 <div class="modal-content">
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title">UI Semantic Understanding</h4>
+                        <h4 class="modal-title">Visual UI Semantic Understanding</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <img class="projects-img-1 img-thumbnail" style="max-width: 100%" src="static/image/projects/UI-semantic.png">
+                        <h4 class="modal-my-title">Visual UI Semantic Understanding</h4>
+                        <p class="lead">
+                            When we human beings viewing a UI, we would intuitively realize where the UI elements and texts are and what contents in them.
+                            We may also guess the possible functionality of the element (e.g., profile picture, setting button) and segment & summarize the UI element blocks (e.g, list of user, menu multi-tub).
+                        </p>
+                        <p class="lead">
+                            With this visual understanding, we can quickly focus on our interested parts of the UI and execute operations.
+                            This project is meant to empower machines with such level of visual UI semantic understanding to accomplish various tasks such as auto testing and auto app operation.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail center-block" src="static/image/projects/UI-semantic.png"
+                                 data-toggle="tooltip" title="UI Semantic Meaning for Elements and Blocks">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UI Semantic Meaning for Elements and Blocks
+                            </p>
+                        </div>
+                        <p class="lead">
+                            Understanding the UI semantics can be converted to two intuitive questions: <span class="my-italic">What does it contain?</span> and <span class="my-italic">What do the components do?</span>
+                            To answer the first question, we utilize the advanced UI-specific UI element detector <a href="http://www.uied.online/">UIED</a> to recognize the basic UI elements from image and the <a href="https://github.com/MulongXie/GUI-Perceptual-Grouping">Perceptual Grouping</a> to segment the layout block as human beings do.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail center-block" src="static/image/projects/grouping1.png"
+                                 data-toggle="tooltip" title="UI Element Detection and Perceptual Grouping">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UI Element Detection and Perceptual Grouping
+                            </p>
+                        </div>
+                        <p class="lead">
+                            This step produces the basic visual properties of the UI components.
+                            Based on the results, the approach utilizes more sophisticated algorithms and models to analyse the role, functionality and description of the UI components.
+                        </p>
+                        <p class="lead my-italic">
+                            The project is still ongoing, and more details will be revealed in future.
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p class="lead">
+                            OnGoing ...
+                        </p>
                     </div>
                 </div>
             </div>
