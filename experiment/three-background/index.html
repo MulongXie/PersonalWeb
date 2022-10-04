@@ -24,7 +24,7 @@
             <p>Research Interests:
                 <span class="pill word-no-break">Software Engineering</span>
                 <span class="pill word-no-break">Computer Vision</span>
-                <span class="pill word-no-break">Robotic Processing Automation</span>
+                <span class="pill word-no-break">Visual Intelligence for Productivity</span>
             </p>
         </div>
     </section>
@@ -683,7 +683,6 @@
                                 <i class="bi bi-hand-index-thumb"></i> Demo applications: object detection and a hand recognition
                             </p>
                         </div>
-
                     </div>
                     <!-- Modal footer -->
                     <div class="modal-footer">
@@ -703,7 +702,52 @@
                     </div>
                     <!-- Modal body -->
                     <div class="modal-body">
-                        Modal body..
+                        <h4 class="modal-my-title">Palm Recognition & Feature Extraction</h4>
+                        <p class="lead">
+                            This project is meant to recognize palm region and extract the feature for further matching and analysis in real-time.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/palm-extract.jpg" style="width: 80%"
+                                 data-toggle="tooltip" title="Palm Recognition">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Palm Recognition
+                            </p>
+                        </div>
+                        <p class="lead">
+                            Instead of machine learning models that demand massive annotated data to train, the approach is based on traditional image processing algorithms that can robustly recognize and correct the direction of palm region without any laborious and time-consuming training process.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/palm-left.png"
+                                 data-toggle="tooltip" title="Image Processing-based Algorithm">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/palm-right.png"
+                                 data-toggle="tooltip" title="Image Processing-based Algorithm">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Image Processing-based Algorithm
+                            </p>
+                        </div>
+                        <p class="lead">
+                            It first gains the binary map of the hand image and then uses my algorithms to identify the finger-tips and the concave points between points.
+                            Then it extracts the palm region based on these points.
+                        </p>
+                        <p class="lead">
+                            Next, the approach produces the features of the palm region for matching and identification.
+                            A vertical-rotation process is also involved to keep the consistency of the feature extraction.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/palm-feature.png" style="width: 80%"
+                                 data-toggle="tooltip" title="Palm Feature Extraction">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Palm Feature Extraction
+                            </p>
+                        </div>
+                        <p class="lead">
+                            My approach is proven to be robust and effective that is able to process 18 frames per second in average.
+                            The demo of the approach can be viewed in the <a href="https://youtu.be/CxUKwZ4NJek">video</a>.
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p><a href="https://youtu.be/CxUKwZ4NJek"><i class="bi bi-youtube"></i> Video</a> </p>
                     </div>
                 </div>
             </div>
