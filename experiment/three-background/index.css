@@ -207,9 +207,9 @@ canvas{
     display: block;
     min-height: 90px;
     padding: 15px;
-    box-shadow: 10px -10px 0 -3px #fb6e89, 10px -10px #fb6e89,
-    20px -20px 0 -3px #935dd6, 20px -20px #935dd6,
-    30px -30px 0 -3px #e9b9ea, 30px -30px #e9b9ea;
+    box-shadow: 10px -10px 0 -3px #fb6e8990, 10px -10px #fb6e8990,
+    20px -20px 0 -3px #935dd690, 20px -20px #935dd690,
+    30px -30px 0 -3px #e9b9ea90, 30px -30px #e9b9ea90;
     transition: box-shadow 0.5s, top 0.5s, left 0.5s;
     position: relative;
     top: 0;
@@ -220,9 +220,9 @@ canvas{
 .my-card:hover {
     top: -30px;
     left: 30px;
-    box-shadow: 0 0 0 -3px #fb6e89, 0 0 0 0 #fb6e89,
-    0 0 0 -3px #935dd6, 0 0 0 0  #935dd6,
-    0 0 0 -3px #c67fea, 0 0 0 0  #c67fea;
+    box-shadow: 0 0 0 -3px #fb6e8990, 0 0 0 0 #fb6e8990,
+    0 0 0 -3px #935dd690, 0 0 0 0  #935dd690,
+    0 0 0 -3px #c67fea90, 0 0 0 0  #c67fea90;
 }
 
 .nav-level-secondary{
