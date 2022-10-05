@@ -888,13 +888,64 @@
                     <!-- Modal body -->
                     <div class="modal-body">
                         <h4 class="modal-my-title">UIED: An Accurate Unsupervised UI Element Detector</h4>
+                        <p class="lead">
+                            Detecting Graphical User Interface (GUI) elements in GUI images is a domain-specific object detection task.
+                            It supports many software engineering tasks, such as <span class="my-italic">GUI automation and testing</span>, <span class="my-italic">GUI search</span> and <span class="my-italic">code generation</span>.
+                        </p>
+                        <p class="lead">
+                            Existing studies for GUI element detection directly borrow the mature methods from computer vision (CV) domain, including old fashioned ones that rely on traditional processing features (e.g., canny edge, contours), and deep learning models that learn to detect from large-scale GUI data.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/uied-contrast.jpg" style="width: 100%"
+                                 data-toggle="tooltip" title="Detection Result">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Detection Result Comparison of Different CV Methods (the green boxes are the detection bounding boxes for UI elements)
+                            </p>
+                        </div>
+                        <p class="lead">
+                            Unfortunately, these CV methods are not originally designed with the awareness of the unique characteristics of GUIs and GUI elements and the high localization accuracy of the GUI element detection task.
+                        </p>
+                        <p class="lead">
+                            We design a new GUI-specific old-fashioned method for GUI element detection which considers the particular properties of GUI elements and achieves a promising performance.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/projects/uied1.png" style="width: 100%"
+                                 data-toggle="tooltip" title="UIED Approach">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UIED Approach
+                            </p>
+                        </div>
+                        <p class="lead">
+                            UIED comprises two parts to detect UI text and graphic elements: <span class="my-bold-italic">(1) For text </span>, it leverages Google OCR to perfrom detection.
+                            <span class="my-bold-italic">For non-text elements</span>, it uses old-fashioned CV approaches to locate the elements and a CNN classifier to achieve classification.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/projects/uied2.png" style="width: 80%"
+                                 data-toggle="tooltip" title="UIED Text and Non-Text Detection">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UIED Text and Non-Text Detection
+                            </p>
+                        </div>
+                        <p class="modal-my-title">UIED Interactive Website</p>
+                        <p class="lead">We also developed an <a href="https://www.uied.online">interactive website</a> for the user to easily use UIED</p>.
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/uied-landing1.png" style="width: 80%"
+                                 data-toggle="tooltip" title="UIED Landing Page">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/uied-dash1.png" style="width: 80%"
+                                 data-toggle="tooltip" title="UIED Interactive Dashboard">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UIED Website
+                            </p>
+                        </div>
+                        <p class="lead">The website also provides an interactive dashboard where the user can adjust the detection result and export it as structure file.</p>
                     </div>
                     <!-- Modal footer -->
                     <div class="modal-footer">
                         <p>
                             <a href="https://www.uied.online"><i class="bi bi-hdd-network"></i> Website</a>
                             <a href="https://github.com/MulongXie/UIED"><i class="bi bi-github"></i> GitHub</a>
-                            <a href="https://www.researchgate.net/publication/346170544_UIED_a_hybrid_tool_for_GUI_element_detection"><i class="bi bi-book"></i> Paper</a>
+                            <a href="https://www.researchgate.net/publication/346170544_UIED_a_hybrid_tool_for_GUI_element_detection"><i class="bi bi-book"></i> Paper1</a>
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3368089.3409691"><i class="bi bi-book"></i> Paper2</a>
                         </p>
                     </div>
                 </div>
