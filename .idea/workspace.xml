@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1a46e6b0-d688-42c9-bf51-ed1cde9df34b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/projects/ezform.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/image/projects/ezform.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/three-background/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/three-background/counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/three-background/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/three-background/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/three-background/javascript.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/three-background/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ml/Code/github/PersonalWeb&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/ml/Code/github/PersonalWeb",
+    "list.type.of.created.stylesheet": "CSS",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/experiment/exp" />
@@ -111,6 +114,8 @@
       <workItem from="1663112659467" duration="613000" />
       <workItem from="1663627307427" duration="23663000" />
       <workItem from="1664274125600" duration="791000" />
+      <workItem from="1664354119888" duration="311000" />
+      <workItem from="1664449040176" duration="715000" />
     </task>
     <servers />
   </component>

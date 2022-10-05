@@ -18,6 +18,7 @@ main{
     position: absolute;
     width: 100%;
     color: var(--primary);
+    overflow: hidden;
 }
 
 @font-face {
