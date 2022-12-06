@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a46e6b0-d688-42c9-bf51-ed1cde9df34b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/three-background/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/three-background/counter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/three-background/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/three-background/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/three-background/javascript.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/three-background/style.css" beforeDir="false" />
-    </list>
+    <list default="true" id="1a46e6b0-d688-42c9-bf51-ed1cde9df34b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,18 +30,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/ml/Code/github/PersonalWeb",
-    "list.type.of.created.stylesheet": "CSS",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/experiment/three-background" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/experiment/exp" />
@@ -116,6 +104,7 @@
       <workItem from="1664274125600" duration="791000" />
       <workItem from="1664354119888" duration="311000" />
       <workItem from="1664449040176" duration="715000" />
+      <workItem from="1670302127266" duration="28000" />
     </task>
     <servers />
   </component>
@@ -132,5 +121,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

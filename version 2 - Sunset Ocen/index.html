@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+<!--    <link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mulong Xie</title>
+    <link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="plugins/jquery/jquery-3.6.0.min.js"></script>
+    <script src="static/icon/fontawesome.js"></script>
+    <script type="module" src="background.js"></script>
+    <script type="module" src="content.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<main>
+    <section id="cover">
+        <div class="container-fluid py-5 text-center">
+            <img src="static/image/ppl.jpg" class="mb-3" style="height: 60vh">
+            <h1 class="name mb-3">Mulong Xie</h1>
+            <p>Ph.D Student at Australian National University</p>
+            <p>Research Interests:
+                <span class="pill word-no-break">Software Engineering</span>
+                <span class="pill word-no-break">Computer Vision</span>
+                <span class="pill word-no-break">Visual Intelligence for Productivity</span>
+            </p>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Side Navigation -->
+                <div id="side-nav" class="p-3 col-3">
+                    <div class="container-fluid text-center mb-3">
+                        <img src="static/image/ppl.jpg" class="rounded-pill" style="width: 70%; margin-bottom: 15px">
+                        <h2>Mulong Xie</h2>
+                    </div>
+                    <nav class="navbar">
+                        <div class="container-fluid" style="padding: 0;">
+                            <ul class="navbar-nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link font-secondary" href="#projects">Research Projects</a>
+                                    <nav class="nav nav-level-secondary">
+                                        <ul class="navbar-nav nav-pills">
+                                            <li class="nav-item">
+                                                <a class="nav-link font-secondary" href="#projects-2022">
+                                                    2022 (Ph.D)
+                                                </a>
+                                                <a class="nav-link font-secondary" href="#projects-2021">
+                                                    2021 (Ph.D)
+                                                </a>
+                                                <a class="nav-link font-secondary" href="#projects-2020">
+                                                    2020 (Ph.D)
+                                                </a>
+                                                <a class="nav-link font-secondary" href="#projects-2019">
+                                                    2019 (Bachelor)
+                                                </a>
+                                                <a class="nav-link font-secondary" href="#projects-2018">
+                                                    2018 (Bachelor)
+                                                </a>
+                                                <a class="nav-link font-secondary" href="#projects-2017">
+                                                    2017 (Bachelor)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </li>
+<!--                                <li class="nav-item">-->
+<!--                                    <a class="nav-link font-secondary" href="#publications">Publications</a>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a class="nav-link font-secondary" href="#work">Working Experience</a>-->
+<!--                                </li>-->
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Content Display -->
+                <div id="side-content" class="col-9 p-5">
+                    <!-- Projects -->
+                    <div id="projects" class="mb-5">
+                        <h1>Research Projects</h1>
+                        <!-- 2022 -->
+                        <div id="projects-2022" class="projects-years">
+                            <h2>2022 (Ph.D)</h2>
+                            <!-- 1 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-semantic">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>Visual UI Semantic Understanding</h3>
+                                        <p class="lead">From <span class="font-secondary fw-bold">visual aspect (image)</span> to intelligently analyze the UI semantics, including <span class="font-secondary fw-bold">visual attributes (shape, location)</span> and <span class="font-secondary fw-bold">semantics (class, role, functionality)</span> of the elements and widget blocks.
+                                            Benefiting plenty of UI automation tasks such as <span class="font-secondary fw-bold">auto testing</span>, <span class="font-secondary fw-bold">UI design search </span> and <span class="font-secondary fw-bold">screen reader</span>.
+                                        </p>
+                                        <p><span class="tag">Software Eng</span> <span class="tag">Visual Intelligence</span> </p>
+                                    </div>
+                                    <div class="col-8 my-auto text-center">
+                                        <img class="projects-img-1 img-thumbnail" style="max-width: 85%" src="static/image/projects/UI-semantic.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-nicro">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>NiCro</h3>
+                                        <p class="lead">Record App actions on <span class="font-secondary fw-bold">one device</span>, Replay them on <span class="font-secondary fw-bold">multiple devices</span> with different Operating Systems (iOS or Android) and screen sizes.
+                                            The system is purely based on <span class="font-secondary fw-bold">visual intelligence</span> and hence is <span class="font-secondary fw-bold">N</span>on-<span class="font-secondary fw-bold">I</span>ntrusive and supportive of <span class="font-secondary fw-bold">Cro</span>ss-Device and <span class="font-secondary fw-bold">Cro</span>ss-Platform testing readily.
+                                        </p>
+                                        <p><span class="tag">Software Eng</span> <span class="tag">Computer Vision</span> <span class="tag">UI Auto Testing</span> </p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-1 img-thumbnail" src="static/image/projects/NiCro.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="container border-my-secondary my-card"  data-bs-toggle="modal" data-bs-target="#modal-ar">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>AR x Object Detection</h3>
+                                        <p class="lead">Integrate <span class="font-secondary fw-bold">Natural Object Detection</span> with <span class="font-secondary fw-bold">Augment Reality (AR) Glasses</span>. A fundamental research for various application.</p>
+                                        <p><span class="tag">Computer Vision</span> <span class="tag">Augment Reality</span></p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/ar1.jpg">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/ar2.jpg">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/ar3.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-palm">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>Palm Recognition</h3>
+                                        <p class="lead">Recognize palm area from hand image and rotate it to upright.</p>
+                                        <p><span class="tag">Computer Vision</span></p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-2 rounded img-thumbnail" src="static/image/projects/palm-left.png">
+                                        <img class="projects-img-2 rounded img-thumbnail" src="static/image/projects/palm-right.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+
+                        <!-- 2021 -->
+                        <div id="projects-2021" class="projects-years">
+                            <h2>2021 (Ph.D)</h2>
+                            <!-- 1 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-voice">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>APP Voice Control x Robot Arm</h3>
+                                        <p class="lead">Identify the target UI component in Any APP by <span class="font-secondary fw-bold">user saying what they want</span> in natural language, and use <span class="font-secondary fw-bold">Robot Arm</span> to interact with the device automatically.</p>
+                                        <p><span class="tag">Software Eng</span> <span class="tag">Computer Vision</span> <span class="tag">UI Automation</span></p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-2 rounded img-thumbnail" src="static/image/projects/robot1.png">
+                                        <img class="projects-img-2 rounded img-thumbnail" src="static/image/projects/robot2.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-grouping">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>UI Component Grouping</h3>
+                                        <p class="lead">Based on a systematic psychological theory - Gestalt Principles, mimic how human <span class="font-secondary fw-bold">perceive discrete parts as an entire </span> to group components in a GUI into layout blocks.</p>
+                                        <p><span class="tag">Software Eng</span> <span class="tag">Computer Vision</span> <span class="tag">UI Understanding</span></p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-1 rounded img-thumbnail" src="static/image/projects/grouping1.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-ezForm">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>ezForm</h3>
+                                        <p class="lead">Transform a <span class="font-secondary fw-bold">form image (photo or screenshot)</span> into a highly <span class="font-secondary fw-bold">interactive form webpage</span> which provides facilitative filling experience.</p>
+                                        <p><span class="tag">Software Eng</span> <span class="tag">Computer Vision</span> <span class="tag">VI4P</span></p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-1 rounded img-thumbnail" src="static/image/projects/ezform.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+
+                        <!-- 2020 -->
+                        <div id="projects-2020" class="projects-years">
+                            <h2>2020 (Ph.D)</h2>
+                            <!-- 1 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-easyd2c">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>EasyD2C (Demo)</h3>
+                                        <p class="lead">A demonstration website to show the <span class="font-secondary fw-bold">modular UI code (HTML, CSS and React style code) generation</span> from <span class="font-secondary fw-bold">UI image</span>.</p>
+                                        <p><span class="tag">Software Eng</span> <span class="tag">Computer Vision</span> <span class="tag">VI4P</span></p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-1 rounded img-thumbnail" src="static/image/projects/easyd2c.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-uied">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>UI Element Detection</h3>
+                                        <p class="lead">An unsupervised approach to <span class="font-secondary fw-bold">detect various UI elements</span> from UI images, which is able to handle diverse UIs (e.g., mobile, desktop) <span class="font-secondary fw-bold">without training on massive data</span>.</p>
+                                        <p><span class="tag">Software Eng</span> <span class="tag">Computer Vision</span></p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-2 rounded img-thumbnail" src="static/image/projects/uied1.png">
+                                        <img class="projects-img-2 rounded img-thumbnail" src="static/image/projects/uied2.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+
+                        <!-- 2019 -->
+                        <div id="projects-2019" class="projects-years">
+                            <h2>2019 (Bachelor)</h2>
+                            <!-- 1 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-img2code">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>GUI Image Code Generation (Exploratory)</h3>
+                                        <p class="lead">Generate <span class="font-secondary fw-bold">UI code and skeleton tree</span> from UI image. Meant to ease the GUI development process by <span class="font-secondary fw-bold">synthesizing code automatically</span> according to the design prototypes.</p>
+                                        <p><span class="tag">Software Eng</span> <span class="tag">Computer Vision</span></p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-1 rounded img-thumbnail" src="static/image/projects/ui2code.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+
+                        <!-- 2018 -->
+                        <div id="projects-2018" class="projects-years">
+                            <h2>2018 (Bachelor)</h2>
+                            <!-- 1 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-egle">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>Geographical Change Detection & Report</h3>
+                                        <p class="lead">Detect <span class="font-secondary fw-bold">changes (e.g., plants, constructions)</span> on a given region or block <span class="font-secondary fw-bold">at some time periods</span> by contrasting <span class="font-secondary fw-bold">satellite images</span> using computer vision techniques.</p>
+                                        <p><span class="tag">Computer Vision</span></p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/eagle1.jpg">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/eagle2.jpg">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/eagle3.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-searcheng">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>Universal Keywords Search Engine</h3>
+                                        <p class="lead">Search related <span class="font-secondary fw-bold">unstructured log files in various formats (txt, pdf, word) from massive database</span> by given some keywords. The engine is built upon ElasticSearch and deployed with a user-friendly webpage.</p>
+                                        <p><span class="tag">Search Engine</span></p>
+                                    </div>
+                                    <div class="col-8 text-center my-auto">
+                                        <img class="projects-img-3 rounded img-thumbnail" style="height: 400px" src="static/image/projects/elasticsearch.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+
+                        <!-- 2017 -->
+                        <div id="projects-2017" class="projects-years">
+                            <h2>2017 (Bachelor)</h2>
+                            <!-- 1 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-uavdigit">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>Digital Target Detection on Unmanned Aerial Vehicle</h3>
+                                        <p class="lead">Detect targets in <span class="font-secondary fw-bold">natural environment</span> and recognize the <span class="font-secondary fw-bold">digital numbers</span> on them to instruct the unmanned Aerial Vehicle to complete certain action accordingly.</p>
+                                        <p><span class="tag">Computer Vision</span> <span class="tag">Unmanned Aerial Vehicle</span></p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/digital1.jpg">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/digital2.jpg">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/digital3.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="container border-my-secondary my-card" data-bs-toggle="modal" data-bs-target="#modal-uavcolor">
+                                <div class="row" style="height: 100%">
+                                    <div class="col-4 border-right-my-secondary">
+                                        <h3>Color Target Detection on Unmanned Aerial Vehicle</h3>
+                                        <p class="lead">Detect <span class="font-secondary fw-bold">colored target regions in the dynamic natural environment</span> to instruct the unmanned Aerial Vehicle to complete certain action accordingly.</p>
+                                        <p><span class="tag">Computer Vision</span> <span class="tag">Unmanned Aerial Vehicle</span></p>
+                                    </div>
+                                    <div class="col-8 my-auto">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/color1.jpg">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/color2.jpg">
+                                        <img class="projects-img-3 rounded img-thumbnail" src="static/image/projects/color3.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+                    </div>
+
+                    <!-- Publication -->
+<!--                    <div id="publications" class="mb-5" style="height: 500px">-->
+<!--                        <h1>Publications</h1>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Work &ndash;&gt;-->
+<!--                    <div id="work" class="" style="height: 500px">-->
+<!--                        <h1>Working Experience</h1>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modal">
+        <!-- 2022 -->
+        <!-- 1 -->
+        <div class="modal fade" id="modal-semantic">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Visual UI Semantic Understanding</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4 class="modal-my-title">Visual UI Semantic Understanding</h4>
+                        <p class="lead">
+                            When we human beings viewing a UI, we would intuitively realize where the UI elements and texts are and what contents in them.
+                            We may also guess the possible functionality of the element (e.g., profile picture, setting button) and segment & summarize the UI element blocks (e.g, list of user, menu multi-tub).
+                        </p>
+                        <p class="lead">
+                            With this visual understanding, we can quickly focus on our interested parts of the UI and execute operations.
+                            This project is meant to empower machines with such level of visual UI semantic understanding to accomplish various tasks such as auto testing and auto app operation.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail center-block" src="static/image/projects/UI-semantic.png"
+                                 data-toggle="tooltip" title="UI Semantic Meaning for Elements and Blocks">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UI Semantic Meaning for Elements and Blocks
+                            </p>
+                        </div>
+                        <p class="lead">
+                            Understanding the UI semantics can be converted to two intuitive questions: <span class="my-italic">What does it contain?</span> and <span class="my-italic">What do the components do?</span>
+                            To answer the first question, we utilize the advanced UI-specific UI element detector <a href="http://www.uied.online/">UIED</a> to recognize the basic UI elements from image and the <a href="https://github.com/MulongXie/GUI-Perceptual-Grouping">Perceptual Grouping</a> to segment the layout block as human beings do.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail center-block" src="static/image/projects/grouping1.png"
+                                 data-toggle="tooltip" title="UI Element Detection and Perceptual Grouping">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UI Element Detection and Perceptual Grouping
+                            </p>
+                        </div>
+                        <p class="lead">
+                            This step produces the basic visual properties of the UI components.
+                            Based on the results, the approach utilizes more sophisticated algorithms and models to analyse the role, functionality and description of the UI components.
+                        </p>
+                        <p class="lead my-italic">
+                            The project is still ongoing, and more details will be revealed in future.
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p class="lead">
+                            OnGoing ...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="modal fade" id="modal-nicro">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">NiCro: Non-intrusive Cross-device and Cross-platform UI Action Record & Replay</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4 class="modal-my-title">NiCro: Non-intrusive Cross-device and Cross-platform UI Action Record & Replay</h4>
+                        <p class="lead">
+                            Due to the huge diversity of the hardware and software environment of the end-device, an APP is necessited to be tested on diverse devices to ensure the compatibility and user experience.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail center-block" src="static/image/modal/nicro-devices.png"
+                                 data-toggle="tooltip" title="An app displayed on various devices">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> An app displayed on various devices. “P“ and “V“ indicate if the device is “Physical“ or “Virtual“; “A“ and “I“ represent “Android“ and “iOS“ platforms; the last number shows the screen size in inches.
+                            </p>
+                        </div>
+                        <p class="lead">
+                            This cross-device and cross-platform testing is highly laborious and involves plenty of repetitive work to run and revise the test script on different devices.
+                        </p>
+                        <p class="lead">
+                            Therefore, we propose the automated UI testing system <span class="my-bold-italic">NiCro</span> to automatically replay the actions on various devices with different hardware (e.g., screen size) and software (e.g., operating system) environments.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail center-block" src="static/image/modal/nicro-workflow2.png"
+                                 data-toggle="tooltip" title="The summarized workflow of NiCro">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> The summarized workflow of NiCro.
+                            </p>
+                        </div>
+                        <p class="lead">
+                            <span class="my-bold-italic">NiCro</span> is a purely non-intrusive system. Its approach only requires GUI images (e.g., screenshot or photo) as the input without any need of the app metadata. This enables it to be highly easy to use and generalize to any types of devices, as it does not demand any specific APIs to hack into the underlying system.
+                        </p>
+                        <p class="lead">
+                            <span class="my-bold-italic">NiCro</span> contains three parts:
+                        </p>
+                        <ol>
+                            <li><span class="my-bold">Virtual Device Farm:</span> It supports various Android device emulators with different Android versions and screen sizes, which can be easily added or removed.</li>
+                            <li><span class="my-bold">Robotic System:</span> It contains one or multiple robot arms and cameras to interact with any type of physical devices.</li>
+                            <li><span class="my-bold">Host Computer:</span> It collects the GUI images (e.g., screenshot or photo) from the above two parts and run the core visual approach:
+                                <ol>
+                                    <li>Detect the UI widgets using an accurate computer vision based detector UIED</li>
+                                    <li>Find the widget on the replaying device that is matched to the target widget on the recording device.</li>
+                                    <li>Match the widget-independent actions (scroll or swipe) from the recording device to the replaying devices.</li>
+                                    <li>Output the converted action to the Virtual Device Farm and Robotic System to replay it on diverse devices.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <div class="text-center" style="width: 100%">
+                            <img class="projects-img-1 img-thumbnail" src="static/image/projects/NiCro.png"
+                                 data-toggle="tooltip" title="NiCro system">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> NiCro System.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p><a href="https://github.com/MulongXie/NiCro-Robotic-Visual-Testing"><i class="bi bi-github"></i> GitHub</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="modal fade" id="modal-ar">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">AR x Object Detection</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4 class="modal-my-title">Augment Reality x Object Detection</h4>
+                        <p class="lead">
+                            The current <span class="my-italic">Virtual Reality</span> & <span class="my-italic">Augment Reality</span> are majorly focusing on creating virtual objects and environment to interact with the user,
+                            while the visual understanding to the real surrounding world through the VR or AR has not been developed thoroughly.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/modal/ar-obj1.png"
+                                 data-toggle="tooltip" title="AR with artificial objects and world">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/modal/ar-obj2.jpg"
+                                 data-toggle="tooltip" title="AR with artificial objects and world">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> AR with artificial objects and world
+                            </p>
+                        </div>
+                        <p class="lead">
+                            However, the wearable AR glasses enjoy the intrinsic advantage to facilitate the user through visual understanding and analysis upon the real world and surrounding environment,
+                            and the most fundamental technique of such visual understanding is Object Detection.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/ar-detection.jpg" style="width: 65%"
+                                 data-toggle="tooltip" title="Object Detection">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Object Detection
+                            </p>
+                        </div>
+                        <p class="lead">
+                            Therefore, combining the <span class="my-bold-italic">AR</span> with the increasingly advanced <span class="my-bold-italic">object detection</span> model would produce many pragmatic applications,
+                            such as <span class="my-italic">real-time text translation</span> and <span class="my-italic">related goods searching</span>.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/ar-ocr.jpg" style="width: 65%"
+                                 data-toggle="tooltip" title="Real-time Translating">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Real-time Translating
+                            </p>
+                        </div>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/ar-clothes.jpg" style="width: 65%"
+                                 data-toggle="tooltip" title="Related Goods Searching">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Related Goods Searching
+                            </p>
+                        </div>
+                        <p class="lead">
+                            We hence conducted one of the pioneering project to integrate the object detection technique with the AR glasses as the foundation for various Wowing applications.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/ar-wear.jpg" style="width: 65%"
+                                 data-toggle="tooltip" title="Wearable AR Glasses">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Wearable AR Glasses
+                            </p>
+                        </div>
+                        <p class="lead">
+                            I developed tow demo applications, including a basic object detection and a hand recognition, to present the idea and potential.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/ar1.jpg" style="width: 65%"
+                                 data-toggle="tooltip" title="AR x Object Detection">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/ar3.jpg" style="width: 65%"
+                                 data-toggle="tooltip" title="AR x Hand Recognition">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Demo applications: object detection and a hand recognition
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p><a href="https://youtu.be/0I-m0eItflk"><i class="bi bi-youtube"></i> Video</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="modal fade" id="modal-palm">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Palm Recognition</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4 class="modal-my-title">Palm Recognition & Feature Extraction</h4>
+                        <p class="lead">
+                            This project is meant to recognize palm region and extract the feature for further matching and analysis in real-time.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/palm-extract.jpg" style="width: 80%"
+                                 data-toggle="tooltip" title="Palm Recognition">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Palm Recognition
+                            </p>
+                        </div>
+                        <p class="lead">
+                            Instead of machine learning models that demand massive annotated data to train, the approach is based on traditional image processing algorithms that can robustly recognize and correct the direction of palm region without any laborious and time-consuming training process.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/palm-left.png"
+                                 data-toggle="tooltip" title="Image Processing-based Algorithm">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/palm-right.png"
+                                 data-toggle="tooltip" title="Image Processing-based Algorithm">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Image Processing-based Algorithm
+                            </p>
+                        </div>
+                        <p class="lead">
+                            It first gains the binary map of the hand image and then uses my algorithms to identify the finger-tips and the concave points between points.
+                            Then it extracts the palm region based on these points.
+                        </p>
+                        <p class="lead">
+                            Next, the approach produces the features of the palm region for matching and identification.
+                            A vertical-rotation process is also involved to keep the consistency of the feature extraction.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/palm-feature.png" style="width: 80%"
+                                 data-toggle="tooltip" title="Palm Feature Extraction">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Palm Feature Extraction
+                            </p>
+                        </div>
+                        <p class="lead">
+                            My approach is proven to be robust and effective that is able to process 18 frames per second in average.
+                            The demo of the approach can be viewed in the <a href="https://youtu.be/CxUKwZ4NJek">video</a>.
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p><a href="https://youtu.be/CxUKwZ4NJek"><i class="bi bi-youtube"></i> Video</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2021 -->
+        <!-- 1 -->
+        <div class="modal fade" id="modal-voice">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">APP Voice Control x Robot Arm</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4 class="modal-my-title">APP Voice Control x Robot Arm</h4>
+                        <p class="lead">
+                            Automatically identify the target icon/UI element according the input natural language command (credit to Ms. Mengyu) and execute the APP operation through the robot arm.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/projects/robot2.png" style="width: 80%"
+                                 data-toggle="tooltip" title="APP Voice Control x Robot Arm">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> APP Voice Control x Robot Arm
+                            </p>
+                        </div>
+                        <p class="lead">
+                            The <span class="my-bold-italic">Robotic System</span> is a general platform that can be integrated with various applications to perform repetitive and laborious operations automatically.
+                            It contains three parts: (1) Robot arm (2) Camera and (3) a Plan Surface to put devices.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/projects/robot1.png" style="width: 80%"
+                                 data-toggle="tooltip" title="Robotic System">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Robotic System
+                            </p>
+                        </div>
+                        <p class="lead">
+                            This system is easy to set up and control (only needs 3-d coordinates).
+                            It mimics the human interaction with the devices that uses the eye (camera) to see and the finger (robot arm) to operate, which has huge potential to be applied in scalable APP development and testing project.
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p style="width: 100%;">
+                            <span class="my-bold-italic">The APP Voice Control Part is credit to Mengyu Chen (mengyu.chen1@anu.edu.au)</span>
+                            <span style="float: right"><a href="https://youtu.be/XRywW5Iq7W8"><i class="bi bi-youtube"></i> Video</a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="modal fade" id="modal-grouping">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">UI Component Grouping</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4 class="modal-my-title">UI Component Perceptual Grouping and Layout Block Segmentation</h4>
+                        <p class="lead">
+                            On GUIs, we do not just see a collection of separated texts, images, buttons, etc. Instead,we see perceptual groups of GUI widgets, such as card, list, tab and menu.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/grouping/groups.png" style="width: 80%"
+                                 data-toggle="tooltip" title="UI Grouping Block">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UI Grouping Block
+                            </p>
+                        </div>
+                        <p class="lead">
+                            Although humans can intuitively see perceptual groups of GUI widgets, current computational approaches are rather limited in partitionnig a GUI into meaningful groups of widget elements.
+                            Thus, the <span class="my-bold-italic">GUI Perceptual Grouping</span> is proposed to mimic how human beings perceive the GUI to recognize and gather the atomic GUI elements into structured groups.
+                        </p>
+                        <div id="Gestalt">
+                            <p class="modal-my-title">Gestalt Principles</p>
+                            <p class="lead">
+                                The approach's design uses a well-established psychological theory, the Gestalt principles of perception, for reference to develop its core algorithms.
+                                Gestalt theory systematically explains how humans see the whole rather than individual and unrelated parts. It includes a set of principles of grouping, among which <span class="my-italic">connectedness</span> , <span class="my-italic">similarity</span>, <span class="my-italic">proximity</span> and <span class="my-italic">continuity</span> are the most essential ones.
+                            </p>
+                            <div class="text-center" style="width: 100%">
+                                <img class="modal-img-2 img-thumbnail" src="static/image/modal/grouping/connectedness.png"
+                                     data-toggle="tooltip" title="Connectedness">
+                                <p class="modal-my-caption">
+                                    <i class="bi bi-hand-index-thumb"></i> Connectedness - We perceive elements connected by uniform visual properties as being more related than those not connected
+                                </p>
+                            </div>
+                            <div class="text-center" style="width: 100%">
+                                <img class="modal-img-2 img-thumbnail" src="static/image/modal/grouping/similarity.png"
+                                     data-toggle="tooltip" title="Similarity">
+                                <p class="modal-my-caption">
+                                    <i class="bi bi-hand-index-thumb"></i> Similarity - Elements are perceptually grouped together if they are similar to each other
+                                </p>
+                            </div>
+                            <div class="text-center" style="width: 100%">
+                                <img class="modal-img-2 img-thumbnail" src="static/image/modal/grouping/proximity.png"
+                                     data-toggle="tooltip" title="Proximity">
+                                <p class="modal-my-caption">
+                                    <i class="bi bi-hand-index-thumb"></i> Proximity - When people see an assortment of objects, they tend to perceive objects that are close (proximate) to each other as a group
+                                </p>
+                            </div>
+                            <div class="text-center" style="width: 100%">
+                                <img class="modal-img-2 img-thumbnail" src="static/image/modal/grouping/continuity.png"
+                                     data-toggle="tooltip" title="Contiuity">
+                                <p class="modal-my-caption">
+                                    <i class="bi bi-hand-index-thumb"></i> Contiuity - Elements arranged in a line or curve are perceived to be more related
+                                </p>
+                            </div>
+                        </div>
+                        <div id="ui-Gestalt">
+                            <p class="modal-my-title">Gestalt in GUI</p>
+                            <p class="lead">
+                                Gestalt principles also greatly influence UI design, but they may be represented in a distinct way.
+                            </p>
+                            <div class="text-center" style="width: 100%">
+                                <img class="modal-img-1-5 img-thumbnail" src="static/image/modal/grouping/gui-connectedness.png"
+                                     data-toggle="tooltip" title="GUI Connectedness">
+                                <p class="modal-my-caption">
+                                    <i class="bi bi-hand-index-thumb"></i> Connectedness - Box container that contains multiple widgets within it, and all the enclosed widgets are perceived as in the same group
+                                </p>
+                            </div>
+                            <div class="text-center" style="width: 100%">
+                                <img class="modal-img-1-5 img-thumbnail" src="static/image/modal/grouping/gui-similarity.png"
+                                     data-toggle="tooltip" title="GUI Similarity">
+                                <p class="modal-my-caption">
+                                    <i class="bi bi-hand-index-thumb"></i> Similarity - Similarity can be observed in aspects of various visual cues, such as size, color, shape or position
+                                </p>
+                            </div>
+                            <div class="text-center" style="width: 100%">
+                                <img class="modal-img-1-5 img-thumbnail" src="static/image/modal/grouping/gui-proximity.png"
+                                     data-toggle="tooltip" title="GUI Proximity">
+                                <p class="modal-my-caption">
+                                    <i class="bi bi-hand-index-thumb"></i> Proximity - Some groups are close to each other and similar in terms of the number and layout of the contained widgets
+                                </p>
+                            </div>
+                            <div class="text-center" style="width: 100%">
+                                <img class="modal-img-1-5 img-thumbnail" src="static/image/modal/grouping/gui-continuity.png"
+                                     data-toggle="tooltip" title="GUI Contiuity">
+                                <p class="modal-my-caption">
+                                    <i class="bi bi-hand-index-thumb"></i> Contiuity - Some detection errors are likely to be spotted if a GUI area or a widget aligns with all the widgets in a perceptual group in a line but is not gathered into that group
+                                </p>
+                            </div>
+                            <p class="lead">
+                                The approach is proven to be effective, and some of the results are shown below:
+                                <div class="text-center" style="width: 100%">
+                                    <img class="modal-img-1-5 img-thumbnail" src="static/image/modal/grouping/result.png"
+                                         data-toggle="tooltip" title="Grouping Result">
+                                    <p class="modal-my-caption">
+                                        <i class="bi bi-hand-index-thumb"></i> Grouping Result
+                                    </p>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p>
+                            <a href="http://www.uied.online/#grouping"><i class="bi bi-hdd-network"></i> Website</a>
+                            <a href="https://www.researchgate.net/publication/361333777_Psychologically-Inspired_Unsupervised_Inference_of_Perceptual_Groups_of_GUI_Widgets_from_GUI_Images"><i class="bi bi-book"></i> Paper</a>
+                            <a href="https://github.com/MulongXie/GUI-Perceptual-Grouping"><i class="bi bi-github"></i> GitHub</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="modal fade" id="modal-ezForm">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">ezForm</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4 class="modal-my-title">ezForm: Easing Form Filling with Intelligent Form Analysis</h4>
+                        <p class="lead">
+                            Form is a common carrier to collect and convey information between individuals and organizations for various purposes.
+                            An effective form-filling design benefits the filler and the issuer by easing the filling process and gathering data efficiently.
+                        </p>
+                        <p class="lead">
+                            Traditional filling methods, such as handwriting paper forms and editing the PDF form, involve many laborious actions and lack usability support.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/modal/ezform-paper.jpg"
+                                 data-toggle="tooltip" title="Fill up Paper Form">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/modal/ezform-pdf.jpg"
+                                 data-toggle="tooltip" title="Fill up PDF Form">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Traditional ways of form filling suffer from many troubles
+                            </p>
+                        </div>
+                        <p class="lead">
+                            One the other hand, the web-based or mobile-based online form that enables many practical human-computer interaction functions emerges with the advancement of information technology.
+                        </p>
+                        <p class="lead">
+                            We propose a novel web-based tool ezForm that automatically converts the PDF form or form image into an online form with rich usability enhancement.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/projects/ezform.png"
+                                 data-toggle="tooltip" title="ezForm Workflow">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> ezForm Workflow
+                            </p>
+                        </div>
+                        <p class="lead">
+                            Our approach first recognizes all the form components and the structure layout using computer vision (CV) techniques and then generates an online form accordingly.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/ezform-overview.png"
+                                 data-toggle="tooltip" title="ezForm Approach">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> ezForm Approach
+                            </p>
+                        </div>
+                        <p class="lead">
+                            Our quantitative evaluation proves that ezForm achieve a promising result and has huge potential to be developed further.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/ezform-result.png"
+                                 data-toggle="tooltip" title="ezForm Result">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> ezForm Result
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p>
+                            <a href="http://ezform.online/"><i class="bi bi-hdd-network"></i> Website</a>
+                            <a href="https://youtu.be/tdgUwnpJqOg"><i class="bi bi-youtube"></i> Video</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2020 -->
+        <!-- 1 -->
+        <div class="modal fade" id="modal-easyd2c">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">EasyD2C (Demo)</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4 class="modal-my-title">EasyD2C: Interactive Demonstration of Code Generation from Image</h4>
+                        <p class="lead">
+                            A  interactive demonstration website to show the structural front-end code generation based on GUI image.
+                            Play with it on the<a href="https://www.uied.online/#2code">Website</a>.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/projects/easyd2c.png" style="width: 100%;"
+                                 data-toggle="tooltip" title="EasyD2C Demo Page">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> EasyD2C Demo Page
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p>
+                            <a href="https://www.uied.online/#2code"><i class="bi bi-hdd-network"></i> Website</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="modal fade" id="modal-uied">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">UI Element Detection</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4 class="modal-my-title">UIED: An Accurate Unsupervised UI Element Detector</h4>
+                        <p class="lead">
+                            Detecting Graphical User Interface (GUI) elements in GUI images is a domain-specific object detection task.
+                            It supports many software engineering tasks, such as <span class="my-italic">GUI automation and testing</span>, <span class="my-italic">GUI search</span> and <span class="my-italic">code generation</span>.
+                        </p>
+                        <p class="lead">
+                            Existing studies for GUI element detection directly borrow the mature methods from computer vision (CV) domain, including old fashioned ones that rely on traditional processing features (e.g., canny edge, contours), and deep learning models that learn to detect from large-scale GUI data.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/uied-contrast.jpg" style="width: 100%"
+                                 data-toggle="tooltip" title="Detection Result">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Detection Result Comparison of Different CV Methods (the green boxes are the detection bounding boxes for UI elements)
+                            </p>
+                        </div>
+                        <p class="lead">
+                            Unfortunately, these CV methods are not originally designed with the awareness of the unique characteristics of GUIs and GUI elements and the high localization accuracy of the GUI element detection task.
+                        </p>
+                        <p class="lead">
+                            We design a new GUI-specific old-fashioned method for GUI element detection which considers the particular properties of GUI elements and achieves a promising performance.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/projects/uied1.png" style="width: 100%"
+                                 data-toggle="tooltip" title="UIED Approach">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UIED Approach
+                            </p>
+                        </div>
+                        <p class="lead">
+                            UIED comprises two parts to detect UI text and graphic elements: <span class="my-bold-italic">(1) For text </span>, it leverages Google OCR to perfrom detection.
+                            <span class="my-bold-italic">For non-text elements</span>, it uses old-fashioned CV approaches to locate the elements and a CNN classifier to achieve classification.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/projects/uied2.png" style="width: 80%"
+                                 data-toggle="tooltip" title="UIED Text and Non-Text Detection">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UIED Text and Non-Text Detection
+                            </p>
+                        </div>
+                        <p class="modal-my-title">UIED Interactive Website</p>
+                        <p class="lead">We also developed an <a href="https://www.uied.online">interactive website</a> for the user to easily use UIED</p>.
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/uied-landing1.png" style="width: 80%"
+                                 data-toggle="tooltip" title="UIED Landing Page">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/uied-dash1.png" style="width: 80%"
+                                 data-toggle="tooltip" title="UIED Interactive Dashboard">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UIED Website
+                            </p>
+                        </div>
+                        <p class="lead">The website also provides an interactive dashboard where the user can adjust the detection result and export it as structure file.</p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p>
+                            <a href="https://www.uied.online"><i class="bi bi-hdd-network"></i> Website</a>
+                            <a href="https://github.com/MulongXie/UIED"><i class="bi bi-github"></i> GitHub</a>
+                            <a href="https://www.researchgate.net/publication/346170544_UIED_a_hybrid_tool_for_GUI_element_detection"><i class="bi bi-book"></i> Paper1</a>
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3368089.3409691"><i class="bi bi-book"></i> Paper2</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2019 -->
+        <!-- 1 -->
+        <div class="modal fade" id="modal-img2code">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">GUI Image Code Generation (Exploratory)</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4 class="modal-my-title">UI2CODE: Computer Vision Based Reverse Engineering of User Interface Design (Exploratory)</h4>
+                        <p class="lead">
+                            In practice of UI development, it usually involves two roles to complete the work, (1) a designer and (2) a developer.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/modal/ui2code-scene.png" style="width: 100%"
+                                 data-toggle="tooltip" title="UI2Code is HELPFUL!">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UI2Code is HELPFUL!
+                            </p>
+                        </div>
+                        <p class="lead">
+                            The developers must manually convert GUI design produced by the designer into working code and laboriously revise the implementation whenever the designs undergo some (even trivial) changes.
+                        </p>
+                        <p class="lead">
+                            Most existing GUI development tools focus attention on providing fancy design images and convenient drag and drop editor, but they do not directly offer the maintainable and usable source code, which is not suitable for the real industrial GUI development project.
+                        </p>
+                        <p class="lead">
+                            To bridge the gap between GUI design and implementation, we propose a novel computer vision based GUI reverse engineering system, <span class="my-bold-italic">UI2CODE</span>.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-1 img-thumbnail" src="static/image/projects/ui2code.png" style="width: 100%"
+                                 data-toggle="tooltip" title="UI2Code Overview">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> UI2Code Overview
+                            </p>
+                        </div>
+                        <p class="lead">
+                            Therefore, the most fundamental task for image-driven UI analysis - UI element detection should be addressed.
+                            <span class="my-bold-italic">And there from, the study of visual understanding of the graphical user interface just commenced</span>.
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <p>
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3368089.3409691"><i class="bi bi-book"></i> Paper</a>
+                            <a href="https://www.researchgate.net/publication/364154717_UI2CODE_Computer_Vision_Based_Reverse_Engineering_of_User_Interface_Design"><i class="bi bi-book"></i> Thesis</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2018 -->
+        <!-- 1 -->
+        <div class="modal fade" id="modal-egle">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Geographical Change Detection & Report</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="lead">Detect changes (e.g., plants, constructions) on a given region or block at some time periods by contrasting satellite images using computer vision techniques.</p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-3 img-thumbnail" src="static/image/modal/eagle-overview1.jpg"
+                                 data-toggle="tooltip" title="The change overview">
+                            <img class="modal-img-3 img-thumbnail" src="static/image/modal/eagle-overview2.png"
+                                 data-toggle="tooltip" title="The change overview - zoom in">
+                            <img class="modal-img-3 img-thumbnail" src="static/image/modal/eagle-overview3.png"
+                                 data-toggle="tooltip" title="The change overview - change rate">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> The architecture of the search engine
+                            </p>
+                        </div>
+                        <p class="lead">
+                            It then generates a comprehensive report for the local change detected, which including the region change overview and the detailed change type for each block.
+                        </p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-3 img-thumbnail" src="static/image/projects/eagle2.jpg" style="height: 500px"
+                                 data-toggle="tooltip" title="Change type in each block">
+                            <img class="modal-img-3 img-thumbnail" src="static/image/projects/eagle3.jpg" style="height: 500px"
+                                 data-toggle="tooltip" title="Change type in each block">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Change type in each block
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <a href="https://www.youtube.com/watch?v=CP9u3479WgM"><i class="bi bi-youtube"></i> Video</a>
+                        <a href="https://gitlab.cecs.anu.edu.au/u5686023/Eagle/-/tree/master"><i class="bi bi-git"></i> Git</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="modal fade" id="modal-searcheng">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Universal Keywords Search Engine</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="lead">Search related <span class="my-bold-italic">unstructured log files in various formats (txt, pdf, word) from massive database</span> by given some keywords. The engine is built upon ElasticSearch and deployed with a user-friendly webpage.</p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/elasticsearch.jpg" style="width: 40%"
+                                 data-toggle="tooltip" title="The architecture of the search engine">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> The architecture of the search engine
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2017 -->
+        <!-- 1 -->
+        <div class="modal fade" id="modal-uavdigit">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Digital Target Detection on Unmanned Aerial Vehicle</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="lead">Detect targets in <span class="font-secondary fw-bold">natural environment</span> and recognize the <span class="font-secondary fw-bold">digital numbers</span> on them to instruct the unmanned Aerial Vehicle to complete certain action accordingly.</p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/digital2.jpg"
+                                 data-toggle="tooltip" title="The digital detection result">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/digital3.jpg"
+                                 data-toggle="tooltip" title="The digital detection result">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/modal/digital-res1.jpg"
+                                 data-toggle="tooltip" title="The digital detection result">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/modal/digital-res2.jpg"
+                                 data-toggle="tooltip" title="The digital detection result">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> The digital detection result under complicated environment
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <a href="https://www.youtube.com/watch?v=YbfvweT6gkQ"><i class="bi bi-youtube"></i> Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="modal fade" id="modal-uavcolor">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Color Target Detection on Unmanned Aerial Vehicle</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="lead">Detect <span class="font-secondary fw-bold">colored target regions in the dynamic natural environment</span> to instruct the unmanned Aerial Vehicle to complete certain action accordingly.</p>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/color1.jpg"
+                                 data-toggle="tooltip" title="The UAV">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/color3.jpg"
+                                 data-toggle="tooltip" title="The playground with color targets">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> The UAV and color targets
+                            </p>
+                        </div>
+                        <div class="text-center" style="width: 100%">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/projects/color2.jpg" style="height: 300px"
+                                 data-toggle="tooltip" title="The UVA">
+                            <img class="modal-img-2 img-thumbnail" src="static/image/modal/color-res1.jpg" style="height: 300px"
+                                 data-toggle="tooltip" title="The playground with color targets">
+                            <p class="modal-my-caption">
+                                <i class="bi bi-hand-index-thumb"></i> Detection results
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <a href="https://www.youtube.com/watch?v=NED_n3tqhOEM"><i class="bi bi-youtube"></i> Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
