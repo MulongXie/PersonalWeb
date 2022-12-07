@@ -154,6 +154,11 @@ canvas{
     font-weight: 500;
 }
 
+.central-footer{
+    text-align: center;
+    display: block;
+}
+
 /****************/
 /*** Specific ***/
 /****************/
