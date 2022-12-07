@@ -1,5 +1,3 @@
-var closeSideNav = false
-
 $(document).ready(function () {
     // sideNavCollapse();
     $(window).scroll(function () {
@@ -28,28 +26,5 @@ function sideNavOnScroll(){
         if (sideNav.is(':visible')){
             sideContent.removeClass('offset-3')
         }
-    }
-}
-
-function toggleContent(){
-    console.log('content')
-    let sideContent = $('#side-content');
-    sideContent.toggleClass('col-9');
-    sideContent.toggleClass('col-12');
-}
-
-function toggleNav(){
-    console.log('nav', closeSideNav)
-    let sideNav = $('#side-nav');
-    sideNav.toggle('col-3')
-}
-
-function toggleNavAndContent(delayContent=false){
-    toggleNav();
-    if (delayContent){
-        setTimeout(toggleContent, 500);
-    }
-    else{
-        toggleContent();
     }
 }

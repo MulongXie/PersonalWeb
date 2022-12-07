@@ -16,9 +16,8 @@ body{
 
 main{
     position: absolute;
-    width: 100%;
+    width: 99vw;
     color: var(--primary);
-    overflow-x: hidden;
 }
 
 @font-face {
@@ -163,7 +162,7 @@ canvas{
     position: absolute;
     z-index: 10;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .name{
@@ -239,6 +238,12 @@ canvas{
     box-shadow: 0 0 0 -3px #fb6e8990, 0 0 0 0 #fb6e8990,
     0 0 0 -3px #935dd690, 0 0 0 0  #935dd690,
     0 0 0 -3px #c67fea90, 0 0 0 0  #c67fea90;
+}
+
+.my-card-short{
+    width: 30%;
+    float: left;
+    margin-left: 25px;
 }
 
 .nav-level-secondary{
