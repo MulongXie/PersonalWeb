@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a46e6b0-d688-42c9-bf51-ed1cde9df34b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/experiment/galaxy/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment/galaxy/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/version 3 - Galaxy/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/version 3 - Galaxy/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/version 3 - Galaxy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/version 3 - Galaxy/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -37,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/experiment/three-background" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -110,7 +120,14 @@
       <workItem from="1664449040176" duration="715000" />
       <workItem from="1670302127266" duration="28000" />
       <workItem from="1670308751416" duration="2846000" />
-      <workItem from="1670366594233" duration="1108000" />
+      <workItem from="1670366594233" duration="12421000" />
+      <workItem from="1670387478953" duration="5926000" />
+      <workItem from="1670449348529" duration="3967000" />
+      <workItem from="1670480112048" duration="990000" />
+      <workItem from="1670553012689" duration="1949000" />
+      <workItem from="1670575219301" duration="14000" />
+      <workItem from="1670980519211" duration="1410000" />
+      <workItem from="1670992513956" duration="3373000" />
     </task>
     <servers />
   </component>
