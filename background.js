@@ -1,8 +1,11 @@
+// import * as THREE from 'three'
+// import * as dat from "dat.gui";
+// import {OrbitControls} from "three/addons/controls/OrbitControls.js";
+// import gsap from 'gsap'
+// import {func} from "three/addons/nodes/shadernode/ShaderNodeBaseElements.js";
+
 import * as THREE from 'three'
-import * as dat from "dat.gui";
-import {OrbitControls} from "three/addons/controls/OrbitControls.js";
-import gsap from 'gsap'
-import {func} from "three/addons/nodes/shadernode/ShaderNodeBaseElements.js";
+import { OrbitControls } from './examples/jsm/controls/OrbitControls.js';
 
 // // 0. add dat gui
 // const gui = new dat.GUI()
