@@ -5,6 +5,10 @@ $(document).ready(function () {
     });
     // add tool tips on image
     $('[data-toggle="tooltip"]').tooltip();
+
+    $(window).on('load', function (){
+        $('.loader-wrapper').slideUp('slow')
+    })
 });
 
 function sideNavOnScroll(){

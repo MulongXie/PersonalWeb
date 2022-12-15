@@ -75,7 +75,7 @@ const starMaterial = new THREE.PointsMaterial(
 // init star points
 const starVertices = []
 const starVelocities = []
-for (let i = 0; i < 100; i++){
+for (let i = 0; i < 10000; i++){
     const x = (Math.random() - 0.5) * 4000
     const y = (Math.random()) * 2000 + 400
     const z = (Math.random() - 0.5) * 2000

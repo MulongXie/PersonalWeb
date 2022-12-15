@@ -159,6 +159,39 @@ canvas{
     display: block;
 }
 
+/* loader */
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(183,105,184);
+    background: linear-gradient(90deg, rgba(183,105,184,0.9948354341736695) 0%, rgba(208,120,25,1) 35%, rgba(203,15,15,1) 73%, rgba(217,42,228,1) 100%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid white;
+    animation: loader 2s infinite ease;
+}
+
+@keyframes loader {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
 /****************/
 /*** Specific ***/
 /****************/
