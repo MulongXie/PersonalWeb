@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a46e6b0-d688-42c9-bf51-ed1cde9df34b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/experiment/galaxy/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiment/galaxy/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/version 3 - Galaxy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/version 3 - Galaxy/index.html" afterDir="false" />
     </list>
@@ -47,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Code/threejs/test" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -58,8 +56,11 @@
       <recent name="$PROJECT_DIR$/static/image" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.server.js">
+  <component name="RunManager" selected="Node.js.server.js (1)">
     <configuration name="new2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/trail/new2.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="server.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/version 1 - Basic/server.js" working-dir="$PROJECT_DIR$/version 1 - Basic">
       <method v="2" />
     </configuration>
     <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" path-to-node="$USER_HOME$/.nvm/versions/node/v16.15.0/bin/node" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
@@ -67,6 +68,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.server.js (1)" />
         <item itemvalue="Node.js.server.js" />
       </list>
     </recent_temporary>
@@ -127,7 +129,8 @@
       <workItem from="1670553012689" duration="1949000" />
       <workItem from="1670575219301" duration="14000" />
       <workItem from="1670980519211" duration="1410000" />
-      <workItem from="1670992513956" duration="3373000" />
+      <workItem from="1670992513956" duration="4543000" />
+      <workItem from="1671058163947" duration="4807000" />
     </task>
     <servers />
   </component>
