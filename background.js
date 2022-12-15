@@ -75,7 +75,7 @@ const starMaterial = new THREE.PointsMaterial(
 // init star points
 const starVertices = []
 const starVelocities = []
-for (let i = 0; i < 10000; i++){
+for (let i = 0; i < 100; i++){
     const x = (Math.random() - 0.5) * 4000
     const y = (Math.random()) * 2000 + 400
     const z = (Math.random() - 0.5) * 2000
@@ -179,29 +179,29 @@ function animate(){
         color.needsUpdate = true
 
         // change the color back while mouse moving away
-        const initialColor = {r: 0, g: 0.19, b: 0.4}
-        const hoverColor = {r: 0.1, g: 0.5, b: 1}
-        gsap.to(hoverColor, {
-            r: initialColor.r,
-            g: initialColor.g,
-            b: initialColor.b,
-            duration: 1,
-            onUpdate: () => {
-                // 1 of 3 vertices
-                color.setX(intersects[0].face.a, hoverColor.r)
-                color.setY(intersects[0].face.a, hoverColor.g)
-                color.setZ(intersects[0].face.a, hoverColor.b)
-                // 2 of 3 vertices
-                color.setX(intersects[0].face.b, hoverColor.r)
-                color.setY(intersects[0].face.b, hoverColor.g)
-                color.setZ(intersects[0].face.b, hoverColor.b)
-                // 3 of 3 vertices
-                color.setX(intersects[0].face.c, hoverColor.r)
-                color.setY(intersects[0].face.c, hoverColor.g)
-                color.setZ(intersects[0].face.c, hoverColor.b)
-                color.needsUpdate = true
-            }
-        })
+        // const initialColor = {r: 0, g: 0.19, b: 0.4}
+        // const hoverColor = {r: 0.1, g: 0.5, b: 1}
+        // gsap.to(hoverColor, {
+        //     r: initialColor.r,
+        //     g: initialColor.g,
+        //     b: initialColor.b,
+        //     duration: 1,
+        //     onUpdate: () => {
+        //         // 1 of 3 vertices
+        //         color.setX(intersects[0].face.a, hoverColor.r)
+        //         color.setY(intersects[0].face.a, hoverColor.g)
+        //         color.setZ(intersects[0].face.a, hoverColor.b)
+        //         // 2 of 3 vertices
+        //         color.setX(intersects[0].face.b, hoverColor.r)
+        //         color.setY(intersects[0].face.b, hoverColor.g)
+        //         color.setZ(intersects[0].face.b, hoverColor.b)
+        //         // 3 of 3 vertices
+        //         color.setX(intersects[0].face.c, hoverColor.r)
+        //         color.setY(intersects[0].face.c, hoverColor.g)
+        //         color.setZ(intersects[0].face.c, hoverColor.b)
+        //         color.needsUpdate = true
+        //     }
+        // })
     }
 
     // 7.2 animate the wave
