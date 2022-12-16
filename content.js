@@ -3,7 +3,7 @@ let timeout = false
 setTimeout(function (){
     $('.loader-wrapper').slideUp('slow')
     timeout = true
-}, 3600)
+}, 3000)
 
 $(document).ready(function () {
     // sideNavCollapse();
