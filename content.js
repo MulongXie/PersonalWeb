@@ -1,3 +1,10 @@
+let timeout = false
+
+setTimeout(function (){
+    $('.loader-wrapper').slideUp('slow')
+    timeout = true
+}, 3600)
+
 $(document).ready(function () {
     // sideNavCollapse();
     $(window).scroll(function () {
@@ -8,6 +15,9 @@ $(document).ready(function () {
 
     $(window).on('load', function (){
         $('.loader-wrapper').slideUp('slow')
+        if (timeout){
+            window.scrollTo(0, 0)
+        }
     })
 });
 
