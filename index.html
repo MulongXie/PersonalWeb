@@ -34,11 +34,10 @@
             <img src="static/image/ppl.jpg" class="mb-3" style="height: 60vh">
             <h1 class="name mb-3">Mulong Xie</h1>
             <p>Postdoctoral Research Fellow at CSIRO</p>
-            <p>Research Interests:
-                <span class="pill word-no-break">Software Engineering</span>
-                <span class="pill word-no-break">Computer Vision</span>
-                <span class="pill word-no-break">Visual Intelligence for Productivity</span>
-            </p>
+            <p>Research Interests: <span class="font-secondary fw-bold">Automate & Facilitate Working Process Through Visual Intelligence</span></p>
+            <span class="pill word-no-break">Software Engineering</span>
+            <span class="pill word-no-break">Computer Vision</span>
+            <span class="pill word-no-break">Visual Intelligence for Productivity</span>
         </div>
     </section>
 
@@ -47,9 +46,14 @@
             <div class="row">
                 <!-- Side Navigation -->
                 <div id="side-nav" class="p-3 col-3">
-                    <div class="container-fluid text-center mb-3">
+                    <div class="container-fluid text-center">
                         <img src="static/image/ppl.jpg" class="rounded-pill" style="width: 50%; margin-bottom: 15px">
                         <h2>Mulong Xie</h2>
+                        <div class="contact">
+                            <a href="https://www.linkedin.com/in/mulongxie" class="contact"><i class="bi bi-linkedin"></i></a>
+                            <a data-bs-toggle="modal" data-bs-target="#modal-email" class="contact"><i class="bi bi-envelope"></i></a>
+                            <a data-bs-toggle="modal" data-bs-target="#modal-instagram" class="contact"><i class="bi bi-instagram"></i></a>
+                        </div>
                     </div>
                     <nav class="navbar">
                         <div class="container-fluid" style="padding: 0;">
@@ -420,6 +424,30 @@
     </section>
 
     <section id="modal">
+        <!-- contact -->
+        <div class="modal fade" id="modal-email" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document" style="margin-top: 100px">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h2>Email</h2>
+                        <span class="tag">mulong.xie@csiro.au</span>
+                        <span class="tag">mulong.xie@anu.edu.au</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-instagram" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document" style="margin-top: 100px">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h2>Scan to find me on <span class="font-secondary">Instagram</span></h2>
+                        <img style="width: 200px" src="public/instagram.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- 2022 -->
         <!-- 0 -->
         <div class="modal fade" id="modal-phd">

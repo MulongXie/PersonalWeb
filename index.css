@@ -56,7 +56,8 @@ a{
 
 a:hover{
     color: var(--secondary);
-
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 canvas{
@@ -274,6 +275,9 @@ canvas{
 
 .education-container{
     margin-top: 45px !important;
+}
+
+.contact-icon:hover{
 }
 
 .school-icon{
