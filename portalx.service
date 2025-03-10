@@ -1,0 +1,19 @@
+[Unit]
+Description=PortalX Web Application
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/portalx/PersonalWeb
+Environment="PATH=/usr/bin"
+Environment="NODE_ENV=production"
+ExecStart=/usr/bin/node server.js
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=portalx-web
+
+[Install]
+WantedBy=multi-user.target 
