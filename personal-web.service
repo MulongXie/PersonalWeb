@@ -1,14 +1,17 @@
 [Unit]
-Description=PortalX Web Application
+Description=Personal Website
 After=network.target
 
 [Service]
 User=www-data
 Group=www-data
-WorkingDirectory=/var/www/portalx/PersonalWeb
+# Ensure the directory exists before starting
+ExecStartPre=/bin/mkdir -p /var/www/portalx/PersonalWeb
+ExecStartPre=/bin/chown -R www-data:www-data /var/www/portalx/PersonalWeb
+WorkingDirectory=/var/www/PersonalWeb
 Environment="PATH=/usr/bin"
 Environment="NODE_ENV=production"
-ExecStart=/usr/bin/node server.js
+ExecStart=/usr/bin/node /var/www/PersonalWeb/server.js
 Restart=on-failure
 RestartSec=10
 StandardOutput=journal
